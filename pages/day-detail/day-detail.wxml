@@ -1,0 +1,59 @@
+<view class="page" wx:if="{{info}}">
+  <!-- 顶部大日期 -->
+  <view class="header">
+    <view class="header-date">
+      <text class="big-day">{{info.day}}</text>
+      <view class="header-right">
+        <text class="header-month">{{info.month}}月</text>
+        <text class="header-week">{{info.weekCN}}</text>
+      </view>
+    </view>
+    <text class="header-sub" wx:if="{{info.solarHoliday || info.lunarHoliday || info.termName}}">
+      {{info.solarHoliday || info.lunarHoliday || info.termName}}
+    </text>
+  </view>
+
+  <!-- 信息卡片列表 -->
+  <view class="card-list">
+    <!-- 农历信息 -->
+    <view class="info-card">
+      <text class="card-label">农历</text>
+      <text class="card-value">{{info.yearGanZhi}}年 {{info.monthCN}}{{info.dayCN}}</text>
+    </view>
+
+    <view class="info-card">
+      <text class="card-label">生肖</text>
+      <text class="card-value">{{info.animal}}</text>
+    </view>
+
+    <!-- 节气信息 -->
+    <view class="info-card" wx:if="{{info.termName}}">
+      <text class="card-label">节气</text>
+      <text class="card-value term">{{info.termName}}</text>
+    </view>
+
+    <!-- 节日信息 -->
+    <view class="info-card" wx:if="{{info.solarHoliday}}">
+      <text class="card-label">公历节日</text>
+      <text class="card-value festival">{{info.solarHoliday}}</text>
+    </view>
+
+    <view class="info-card" wx:if="{{info.lunarHoliday}}">
+      <text class="card-label">农历节日</text>
+      <text class="card-value festival">{{info.lunarHoliday}}</text>
+    </view>
+
+    <!-- 假日状态 -->
+    <view class="info-card" wx:if="{{info.dayStatus}}">
+      <text class="card-label">假日状态</text>
+      <text class="card-value" wx:if="{{info.dayStatus.isHoliday}}">{{info.dayStatus.name}}放假</text>
+      <text class="card-value" wx:if="{{info.dayStatus.isWorkday}}">{{info.dayStatus.name}}调休上班</text>
+    </view>
+
+    <!-- 周末 -->
+    <view class="info-card">
+      <text class="card-label">星期</text>
+      <text class="card-value">{{info.weekCN}} {{info.isWeekend ? '（周末）' : '（工作日）'}}</text>
+    </view>
+  </view>
+</view>

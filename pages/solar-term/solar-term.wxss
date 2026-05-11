@@ -1,0 +1,100 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.year-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24rpx;
+  background: var(--color-bg-card);
+  margin-bottom: 20rpx;
+}
+
+.nav-btn {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--color-bg-page);
+  font-size: 30rpx;
+  color: var(--color-text-primary);
+}
+
+.nav-btn:active {
+  background: var(--color-border);
+}
+
+.year-text {
+  font-size: 32rpx;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin: 0 40rpx;
+}
+
+.term-list {
+  padding: 0 20rpx;
+}
+
+.month-divider {
+  padding: 20rpx 10rpx 8rpx;
+  font-size: 24rpx;
+  color: var(--color-text-tertiary);
+  font-weight: 500;
+}
+
+.term-item {
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-card);
+  padding: 28rpx 30rpx;
+  margin-bottom: 2rpx;
+}
+
+.term-item:first-of-type {
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.term-item:last-of-type {
+  border-radius: 0 0 16rpx 16rpx;
+  margin-bottom: 0;
+}
+
+.term-name {
+  flex: 1;
+  font-size: 30rpx;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.term-date {
+  font-size: 28rpx;
+  color: var(--color-text-secondary);
+  margin-right: 16rpx;
+}
+
+.term-item.current {
+  background: var(--color-primary-light);
+}
+
+.term-item.current .term-name {
+  color: var(--color-primary);
+}
+
+.term-item.past .term-name {
+  color: var(--color-text-tertiary);
+}
+
+.term-badge {
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+  background: var(--color-primary);
+}
+
+.badge-text {
+  font-size: 20rpx;
+  color: #fff;
+}

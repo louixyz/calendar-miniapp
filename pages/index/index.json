@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "万年历",
+  "usingComponents": {
+    "calendar-grid": "../../components/calendar-grid/calendar-grid",
+    "month-picker": "../../components/month-picker/month-picker"
+  }
+}

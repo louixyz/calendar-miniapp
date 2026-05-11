@@ -1,0 +1,89 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.header {
+  background: var(--color-primary);
+  padding: 60rpx 40rpx 50rpx;
+  color: #fff;
+}
+
+.header-date {
+  display: flex;
+  align-items: baseline;
+  gap: 16rpx;
+  margin-bottom: 12rpx;
+}
+
+.big-day {
+  font-size: 96rpx;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.header-month {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+
+.header-week {
+  font-size: 26rpx;
+  opacity: 0.8;
+}
+
+.header-sub {
+  font-size: 26rpx;
+  opacity: 0.9;
+}
+
+.card-list {
+  padding: 20rpx;
+}
+
+.info-card {
+  background: var(--color-bg-card);
+  padding: 28rpx 30rpx;
+  margin-bottom: 2rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-card:first-child {
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.info-card:last-child {
+  border-radius: 0 0 16rpx 16rpx;
+  margin-bottom: 0;
+}
+
+.info-card:only-child {
+  border-radius: 16rpx;
+}
+
+.card-label {
+  font-size: 28rpx;
+  color: var(--color-text-tertiary);
+}
+
+.card-value {
+  font-size: 28rpx;
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+.card-value.term {
+  color: var(--color-solar-term);
+}
+
+.card-value.festival {
+  color: var(--color-festival);
+}

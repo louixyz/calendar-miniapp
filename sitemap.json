@@ -1,0 +1,17 @@
+{
+  "desc": "关于本文件的更多信息，请参考文档",
+  "rules": [
+    {
+      "action": "allow",
+      "page": "pages/index/*"
+    },
+    {
+      "action": "allow",
+      "page": "pages/solar-term/*"
+    },
+    {
+      "action": "allow",
+      "page": "pages/holiday/*"
+    }
+  ]
+}

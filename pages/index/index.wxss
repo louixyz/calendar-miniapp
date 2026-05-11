@@ -1,0 +1,161 @@
+.page-container {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+/* 月份导航 */
+.month-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24rpx 30rpx;
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.nav-arrow {
+  width: 64rpx;
+  height: 64rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav-arrow:active {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.arrow {
+  font-size: 32rpx;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.nav-year {
+  font-size: 34rpx;
+  font-weight: 500;
+}
+
+.nav-lunar {
+  font-size: 22rpx;
+  opacity: 0.85;
+  margin-top: 4rpx;
+}
+
+/* 日期信息卡 */
+.date-info-card {
+  margin: 20rpx;
+  padding: 28rpx;
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-lg, 12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-main {
+  display: flex;
+  align-items: baseline;
+  gap: 12rpx;
+}
+
+.info-date {
+  font-size: 40rpx;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.info-week {
+  font-size: 26rpx;
+  color: var(--color-text-secondary);
+}
+
+.info-sub {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4rpx;
+}
+
+.info-lunar {
+  font-size: 26rpx;
+  color: var(--color-text-secondary);
+}
+
+.info-term {
+  font-size: 22rpx;
+  color: var(--color-solar-term);
+}
+
+.info-festival {
+  font-size: 22rpx;
+  color: var(--color-festival);
+  font-weight: 500;
+}
+
+/* 下一个节假日 */
+.next-holiday {
+  margin: 20rpx;
+  padding: 24rpx 28rpx;
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-lg, 12px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-left: 6rpx solid var(--color-primary);
+}
+
+.holiday-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4rpx;
+}
+
+.holiday-name {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.holiday-count {
+  font-size: 24rpx;
+  color: var(--color-text-tertiary);
+}
+
+.holiday-arrow {
+  font-size: 28rpx;
+  color: var(--color-text-tertiary);
+}
+
+/* 底部快捷入口 */
+.shortcuts {
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+}
+
+.shortcut-item {
+  display: flex;
+  align-items: center;
+  gap: 6rpx;
+  padding: 12rpx 24rpx;
+}
+
+.shortcut-icon {
+  font-size: 28rpx;
+  color: var(--color-text-tertiary);
+}
+
+.shortcut-text {
+  font-size: 24rpx;
+  color: var(--color-text-tertiary);
+}

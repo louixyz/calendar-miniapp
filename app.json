@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/day-detail/day-detail",
+    "pages/solar-term/solar-term",
+    "pages/holiday/holiday",
+    "pages/about/about"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#E85D3A",
+    "navigationBarTitleText": "万年历",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "dark"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#E85D3A",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "日历",
+        "iconPath": "assets/tab/calendar.png",
+        "selectedIconPath": "assets/tab/calendar-active.png"
+      },
+      {
+        "pagePath": "pages/solar-term/solar-term",
+        "text": "节气",
+        "iconPath": "assets/tab/solar.png",
+        "selectedIconPath": "assets/tab/solar-active.png"
+      },
+      {
+        "pagePath": "pages/holiday/holiday",
+        "text": "节假日",
+        "iconPath": "assets/tab/holiday.png",
+        "selectedIconPath": "assets/tab/holiday-active.png"
+      }
+    ]
+  },
+  "requiredPrivateInfos": [],
+  "permission": {},
+  "__usePrivacyCheck__": true,
+  "lazyCodeLoading": "requiredComponents",
+  "sitemapLocation": "sitemap.json"
+}

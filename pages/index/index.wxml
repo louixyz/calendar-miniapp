@@ -1,0 +1,62 @@
+<view class="page-container">
+  <!-- 月份导航 -->
+  <view class="month-nav">
+    <view class="nav-arrow" bindtap="onPrevMonth">
+      <text class="arrow">‹</text>
+    </view>
+    <view class="nav-title" bindtap="onPickerOpen">
+      <text class="nav-year">{{year}}年{{month}}月</text>
+      <text class="nav-lunar" wx:if="{{detail.ganZhi}}">{{detail.ganZhi}}（{{detail.animal}}年）</text>
+    </view>
+    <view class="nav-arrow" bindtap="onNextMonth">
+      <text class="arrow">›</text>
+    </view>
+  </view>
+
+  <!-- 选中日期信息卡 -->
+  <view class="date-info-card" bindtap="onGoDetail">
+    <view class="info-main">
+      <text class="info-date">{{detail.month}}月{{detail.day}}日</text>
+      <text class="info-week">{{detail.weekDay}}</text>
+    </view>
+    <view class="info-sub">
+      <text class="info-lunar">{{detail.lunar}}</text>
+      <text class="info-term" wx:if="{{detail.term}}">{{detail.term}}</text>
+      <text class="info-festival" wx:if="{{detail.festival}}">{{detail.festival}}</text>
+    </view>
+  </view>
+
+  <!-- 日历网格 -->
+  <calendar-grid
+    year="{{year}}"
+    month="{{month}}"
+    selectedDate="{{selectedDate}}"
+    bind:daytap="onDayTap"
+  />
+
+  <!-- 下一个节假日提示 -->
+  <view class="next-holiday" wx:if="{{nextHoliday}}" bindtap="goHoliday">
+    <view class="holiday-info">
+      <text class="holiday-name">{{nextHoliday.name}}</text>
+      <text class="holiday-count">还有 {{nextHoliday.daysUntil}} 天</text>
+    </view>
+    <text class="holiday-arrow">›</text>
+  </view>
+
+  <!-- 底部快捷入口 -->
+  <view class="shortcuts">
+    <view class="shortcut-item" bindtap="goAbout">
+      <text class="shortcut-icon">ⓘ</text>
+      <text class="shortcut-text">关于</text>
+    </view>
+  </view>
+
+  <!-- 月份选择器 -->
+  <month-picker
+    year="{{year}}"
+    month="{{month}}"
+    visible="{{showPicker}}"
+    bind:change="onMonthChange"
+    bind:close="onPickerClose"
+  />
+</view>

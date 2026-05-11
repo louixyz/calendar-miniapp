@@ -1,0 +1,32 @@
+<view class="month-picker-mask" wx:if="{{visible}}" bindtap="onMaskTap">
+  <view class="month-picker" catchtap="noop">
+    <!-- 年份切换头部 -->
+    <view class="picker-header">
+      <view class="arrow-btn" catchtap="onPrevYear">
+        <text class="arrow-text">‹</text>
+      </view>
+      <text class="year-text">{{year}}年</text>
+      <view class="arrow-btn" catchtap="onNextYear">
+        <text class="arrow-text">›</text>
+      </view>
+    </view>
+
+    <!-- 12个月份网格 -->
+    <view class="month-grid">
+      <view
+        class="month-item {{item === month ? 'active' : ''}}"
+        wx:for="{{months}}"
+        wx:key="index"
+        data-month="{{index + 1}}"
+        bindtap="onSelectMonth"
+      >
+        {{item}}
+      </view>
+    </view>
+
+    <!-- 回到今天 -->
+    <view class="back-today" bindtap="onBackToToday">
+      <text class="back-today-text">回到今天</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,5316 @@
+{
+  "meta": {
+    "caseId": "8c21919a-7f77-4280-8fd9-0cb9e07b8425",
+    "caseName": "minitest-1",
+    "remarks": "",
+    "version": "0.0.1",
+    "startTime": 1778483481998,
+    "endTime": 1778483660721,
+    "appid": "wxca30cdd6540765b9",
+    "casePath": "",
+    "caseType": "normal",
+    "commonParams": [
+      {
+        "key": "1778483660785",
+        "name": "",
+        "value": ""
+      }
+    ]
+  },
+  "env": {
+    "wxapplibVersion": "3.4.10",
+    "devtoolsVersion": "2.01.2510290",
+    "openid": "o6zAJs2QNReSEXqkHS8FN4go7YIs",
+    "entry": {
+      "query": "",
+      "scene": 1001
+    },
+    "mock": [
+      "none"
+    ],
+    "maxWaitFor": 10000,
+    "ignoreSelectors": [],
+    "mockAPIs": [],
+    "cleanCache": [
+      "none"
+    ],
+    "groupTouch": false,
+    "replaySetting": {
+      "screenshot": "none"
+    },
+    "simulatorType": "wechat",
+    "device": "iPhone 12/13 (Pro)",
+    "recordAPIs": []
+  },
+  "commands": [
+    {
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "startRecord",
+      "waitfor": 0,
+      "timeStamp": 1778483481998,
+      "desc": ""
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 328.0626220703125,
+            "clientY": 105.7734375,
+            "force": 1,
+            "pageX": 328.0626220703125,
+            "pageY": 105.7734375,
+            "screenX": 1087.5,
+            "screenY": 271.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 328.0626220703125,
+            "clientY": 105.7734375,
+            "force": 1,
+            "pageX": 328.0626220703125,
+            "pageY": 105.7734375,
+            "screenX": 1087.5,
+            "screenY": 271.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 4707,
+      "waitfor": 4707,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 328.0626220703125,
+            "clientY": 105.7734375,
+            "pageX": 328.0626220703125,
+            "pageY": 105.7734375,
+            "screenX": 1087.5,
+            "screenY": 271.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 4796,
+      "waitfor": 89,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {
+          "x": 328.0626220703125,
+          "y": 105.7734375
+        },
+        "changedTouches": [
+          {
+            "clientX": 328.0626220703125,
+            "clientY": 105.7734375,
+            "force": 1,
+            "pageX": 328.0626220703125,
+            "pageY": 105.7734375,
+            "screenX": 1087.5,
+            "screenY": 271.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 328.0626220703125,
+            "clientY": 105.7734375,
+            "force": 1,
+            "pageX": 328.0626220703125,
+            "pageY": 105.7734375,
+            "screenX": 1087.5,
+            "screenY": 271.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 4798,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.header",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 345,
+            "clientY": 106.578125,
+            "force": 1,
+            "pageX": 345,
+            "pageY": 106.578125,
+            "screenX": 1098,
+            "screenY": 272
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 345,
+            "clientY": 106.578125,
+            "force": 1,
+            "pageX": 345,
+            "pageY": 106.578125,
+            "screenX": 1098,
+            "screenY": 272
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.header",
+        ".header",
+        "/view/view[1]"
+      ],
+      "timeStamp": 5899,
+      "waitfor": 1101,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.header",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 345,
+            "clientY": 106.578125,
+            "pageX": 345,
+            "pageY": 106.578125,
+            "screenX": 1098,
+            "screenY": 272
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.header",
+        ".header",
+        "/view/view[1]"
+      ],
+      "timeStamp": 5946,
+      "waitfor": 47,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.header",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一",
+      "eventData": {
+        "detail": {
+          "x": 345,
+          "y": 106.578125
+        },
+        "changedTouches": [
+          {
+            "clientX": 345,
+            "clientY": 106.578125,
+            "force": 1,
+            "pageX": 345,
+            "pageY": 106.578125,
+            "screenX": 1098,
+            "screenY": 272
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 345,
+            "clientY": 106.578125,
+            "force": 1,
+            "pageX": 345,
+            "pageY": 106.578125,
+            "screenX": 1098,
+            "screenY": 272
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.header",
+        ".header",
+        "/view/view[1]"
+      ],
+      "timeStamp": 5946,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[2]/view[3]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "本月\n大月（30天）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 248.21875,
+            "clientY": 241.25784301757812,
+            "force": 1,
+            "pageX": 248.21875,
+            "pageY": 241.25784301757812,
+            "screenX": 1038,
+            "screenY": 355.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 248.21875,
+            "clientY": 241.25784301757812,
+            "force": 1,
+            "pageX": 248.21875,
+            "pageY": 241.25784301757812,
+            "screenX": 1038,
+            "screenY": 355.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[3]"
+      ],
+      "timeStamp": 29912,
+      "waitfor": 10000,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[2]/view[3]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "本月\n大月（30天）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 248.21875,
+            "clientY": 241.25784301757812,
+            "pageX": 248.21875,
+            "pageY": 241.25784301757812,
+            "screenX": 1038,
+            "screenY": 355.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[3]"
+      ],
+      "timeStamp": 30008,
+      "waitfor": 96,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[2]/view[3]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "本月\n大月（30天）",
+      "eventData": {
+        "detail": {
+          "x": 248.21875,
+          "y": 241.25784301757812
+        },
+        "changedTouches": [
+          {
+            "clientX": 248.21875,
+            "clientY": 241.25784301757812,
+            "force": 1,
+            "pageX": 248.21875,
+            "pageY": 241.25784301757812,
+            "screenX": 1038,
+            "screenY": 355.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 248.21875,
+            "clientY": 241.25784301757812,
+            "force": 1,
+            "pageX": 248.21875,
+            "pageY": 241.25784301757812,
+            "screenX": 1038,
+            "screenY": 355.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[3]"
+      ],
+      "timeStamp": 30009,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 258.7030029296875,
+            "clientY": 208.18753051757812,
+            "force": 1,
+            "pageX": 258.7030029296875,
+            "pageY": 208.18753051757812,
+            "screenX": 1044.5,
+            "screenY": 335
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 258.7030029296875,
+            "clientY": 208.18753051757812,
+            "force": 1,
+            "pageX": 258.7030029296875,
+            "pageY": 208.18753051757812,
+            "screenX": 1044.5,
+            "screenY": 335
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 30847,
+      "waitfor": 838,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 258.7030029296875,
+            "clientY": 208.18753051757812,
+            "pageX": 258.7030029296875,
+            "pageY": 208.18753051757812,
+            "screenX": 1044.5,
+            "screenY": 335
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 30943,
+      "waitfor": 96,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {
+          "x": 258.7030029296875,
+          "y": 208.18753051757812
+        },
+        "changedTouches": [
+          {
+            "clientX": 258.7030029296875,
+            "clientY": 208.18753051757812,
+            "force": 1,
+            "pageX": 258.7030029296875,
+            "pageY": 208.18753051757812,
+            "screenX": 1044.5,
+            "screenY": 335
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 258.7030029296875,
+            "clientY": 208.18753051757812,
+            "force": 1,
+            "pageX": 258.7030029296875,
+            "pageY": 208.18753051757812,
+            "screenX": 1044.5,
+            "screenY": 335
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 30945,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 279.6719970703125,
+            "clientY": 308.9999694824219,
+            "force": 1,
+            "pageX": 279.6719970703125,
+            "pageY": 308.9999694824219,
+            "screenX": 1057.5,
+            "screenY": 397.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 279.6719970703125,
+            "clientY": 308.9999694824219,
+            "force": 1,
+            "pageX": 279.6719970703125,
+            "pageY": 308.9999694824219,
+            "screenX": 1057.5,
+            "screenY": 397.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 31402,
+      "waitfor": 457,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 279.6719970703125,
+            "clientY": 308.9999694824219,
+            "pageX": 279.6719970703125,
+            "pageY": 308.9999694824219,
+            "screenX": 1057.5,
+            "screenY": 397.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 31491,
+      "waitfor": 89,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {
+          "x": 279.6719970703125,
+          "y": 308.9999694824219
+        },
+        "changedTouches": [
+          {
+            "clientX": 279.6719970703125,
+            "clientY": 308.9999694824219,
+            "force": 1,
+            "pageX": 279.6719970703125,
+            "pageY": 308.9999694824219,
+            "screenX": 1057.5,
+            "screenY": 397.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 279.6719970703125,
+            "clientY": 308.9999694824219,
+            "force": 1,
+            "pageX": 279.6719970703125,
+            "pageY": 308.9999694824219,
+            "screenX": 1057.5,
+            "screenY": 397.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 31493,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 310.3203125,
+            "clientY": 201.73440551757812,
+            "force": 1,
+            "pageX": 310.3203125,
+            "pageY": 201.73440551757812,
+            "screenX": 1076.5,
+            "screenY": 331
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 310.3203125,
+            "clientY": 201.73440551757812,
+            "force": 1,
+            "pageX": 310.3203125,
+            "pageY": 201.73440551757812,
+            "screenX": 1076.5,
+            "screenY": 331
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 31700,
+      "waitfor": 207,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 310.3203125,
+            "clientY": 201.73440551757812,
+            "pageX": 310.3203125,
+            "pageY": 201.73440551757812,
+            "screenX": 1076.5,
+            "screenY": 331
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 31826,
+      "waitfor": 126,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "生肖\n马",
+      "eventData": {
+        "detail": {
+          "x": 310.3203125,
+          "y": 201.73440551757812
+        },
+        "changedTouches": [
+          {
+            "clientX": 310.3203125,
+            "clientY": 201.73440551757812,
+            "force": 1,
+            "pageX": 310.3203125,
+            "pageY": 201.73440551757812,
+            "screenX": 1076.5,
+            "screenY": 331
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 310.3203125,
+            "clientY": 201.73440551757812,
+            "force": 1,
+            "pageX": 310.3203125,
+            "pageY": 201.73440551757812,
+            "screenX": 1076.5,
+            "screenY": 331
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[2]"
+      ],
+      "timeStamp": 31828,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 328.8673095703125,
+            "clientY": 301.7344055175781,
+            "force": 1,
+            "pageX": 328.8673095703125,
+            "pageY": 301.7344055175781,
+            "screenX": 1088,
+            "screenY": 393
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 328.8673095703125,
+            "clientY": 301.7344055175781,
+            "force": 1,
+            "pageX": 328.8673095703125,
+            "pageY": 301.7344055175781,
+            "screenX": 1088,
+            "screenY": 393
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 32037,
+      "waitfor": 209,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 328.8673095703125,
+            "clientY": 301.7344055175781,
+            "pageX": 328.8673095703125,
+            "pageY": 301.7344055175781,
+            "screenX": 1088,
+            "screenY": 393
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 32149,
+      "waitfor": 112,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/view[2]/view[4]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/day-detail/day-detail",
+      "text": "星期一 （工作日）",
+      "eventData": {
+        "detail": {
+          "x": 328.8673095703125,
+          "y": 301.7344055175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 328.8673095703125,
+            "clientY": 301.7344055175781,
+            "force": 1,
+            "pageX": 328.8673095703125,
+            "pageY": 301.7344055175781,
+            "screenX": 1088,
+            "screenY": 393
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 328.8673095703125,
+            "clientY": 301.7344055175781,
+            "force": 1,
+            "pageX": 328.8673095703125,
+            "pageY": 301.7344055175781,
+            "screenX": 1088,
+            "screenY": 393
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[2]/view[4]/text[2]"
+      ],
+      "timeStamp": 32151,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.page",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一\n农历\n丙午年 三月廿四\n生肖\n马\n本月\n大月（30天）\n星期\n星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 276.4453125,
+            "clientY": 417.8672180175781,
+            "force": 1,
+            "pageX": 276.4453125,
+            "pageY": 417.8672180175781,
+            "screenX": 1055.5,
+            "screenY": 465
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 276.4453125,
+            "clientY": 417.8672180175781,
+            "force": 1,
+            "pageX": 276.4453125,
+            "pageY": 417.8672180175781,
+            "screenX": 1055.5,
+            "screenY": 465
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.page",
+        ".page",
+        "/view"
+      ],
+      "timeStamp": 32336,
+      "waitfor": 185,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.page",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一\n农历\n丙午年 三月廿四\n生肖\n马\n本月\n大月（30天）\n星期\n星期一 （工作日）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 277.258056640625,
+            "clientY": 417.8709411621094,
+            "pageX": 277.258056640625,
+            "pageY": 417.8709411621094,
+            "screenX": 1056,
+            "screenY": 465
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.page",
+        ".page",
+        "/view"
+      ],
+      "timeStamp": 32434,
+      "waitfor": 98,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.page",
+      "value": null,
+      "path": "pages/day-detail/day-detail",
+      "text": "11\n5月\n星期一\n农历\n丙午年 三月廿四\n生肖\n马\n本月\n大月（30天）\n星期\n星期一 （工作日）",
+      "eventData": {
+        "detail": {
+          "x": 277.258056640625,
+          "y": 417.8709411621094
+        },
+        "changedTouches": [
+          {
+            "clientX": 276.4453125,
+            "clientY": 417.8672180175781,
+            "force": 1,
+            "pageX": 276.4453125,
+            "pageY": 417.8672180175781,
+            "screenX": 1055.5,
+            "screenY": 465
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 276.4453125,
+            "clientY": 417.8672180175781,
+            "force": 1,
+            "pageX": 276.4453125,
+            "pageY": 417.8672180175781,
+            "screenX": 1055.5,
+            "screenY": 465
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.page",
+        ".page",
+        "/view"
+      ],
+      "timeStamp": 32436,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 34681,
+      "waitfor": 2245,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 337.7342529296875,
+            "clientY": 97.703125,
+            "force": 1,
+            "pageX": 337.7342529296875,
+            "pageY": 97.703125,
+            "screenX": 1093.5,
+            "screenY": 266.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 337.7342529296875,
+            "clientY": 97.703125,
+            "force": 1,
+            "pageX": 337.7342529296875,
+            "pageY": 97.703125,
+            "screenX": 1093.5,
+            "screenY": 266.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 35778,
+      "waitfor": 1097,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 337.7342529296875,
+            "clientY": 97.703125,
+            "pageX": 337.7342529296875,
+            "pageY": 97.703125,
+            "screenX": 1093.5,
+            "screenY": 266.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 35883,
+      "waitfor": 105,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.info-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "三月廿四",
+      "eventData": {
+        "detail": {
+          "x": 337.7342529296875,
+          "y": 97.703125
+        },
+        "changedTouches": [
+          {
+            "clientX": 337.7342529296875,
+            "clientY": 97.703125,
+            "force": 1,
+            "pageX": 337.7342529296875,
+            "pageY": 97.703125,
+            "screenX": 1093.5,
+            "screenY": 266.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 337.7342529296875,
+            "clientY": 97.703125,
+            "force": 1,
+            "pageX": 337.7342529296875,
+            "pageY": 97.703125,
+            "screenX": 1093.5,
+            "screenY": 266.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-lunar",
+        ".info-lunar",
+        "/view/view[2]/view[2]/text"
+      ],
+      "timeStamp": 35884,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 40292,
+      "waitfor": 4408,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 28,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 41996,
+      "waitfor": 1704,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 215.9609375,
+            "clientY": 13.03125,
+            "force": 1,
+            "pageX": 215.9609375,
+            "pageY": 41.03125,
+            "screenX": 1018,
+            "screenY": 214
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 215.9609375,
+            "clientY": 13.03125,
+            "force": 1,
+            "pageX": 215.9609375,
+            "pageY": 41.03125,
+            "screenX": 1018,
+            "screenY": 214
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 43489,
+      "waitfor": 1493,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 215.9609375,
+            "clientY": 13.03125,
+            "pageX": 215.9609375,
+            "pageY": 41.03125,
+            "screenX": 1018,
+            "screenY": 214
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 43576,
+      "waitfor": 87,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {
+          "x": 215.9609375,
+          "y": 41.03125
+        },
+        "changedTouches": [
+          {
+            "clientX": 215.9609375,
+            "clientY": 13.03125,
+            "force": 1,
+            "pageX": 215.9609375,
+            "pageY": 41.03125,
+            "screenX": 1018,
+            "screenY": 214
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 215.9609375,
+            "clientY": 13.03125,
+            "force": 1,
+            "pageX": 215.9609375,
+            "pageY": 41.03125,
+            "screenX": 1018,
+            "screenY": 214
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 43578,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 136.125,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 136.125,
+            "pageY": 421.6719055175781,
+            "screenX": 968.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 136.125,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 136.125,
+            "pageY": 421.6719055175781,
+            "screenX": 968.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 44519,
+      "waitfor": 941,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 136.125,
+            "clientY": 393.6719055175781,
+            "pageX": 136.125,
+            "pageY": 421.6719055175781,
+            "screenX": 968.5,
+            "screenY": 450
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 44623,
+      "waitfor": 104,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {
+          "x": 136.125,
+          "y": 421.6719055175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 136.125,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 136.125,
+            "pageY": 421.6719055175781,
+            "screenX": 968.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 136.125,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 136.125,
+            "pageY": 421.6719055175781,
+            "screenX": 968.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 44624,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45015,
+      "waitfor": 391,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45089,
+      "waitfor": 74,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {
+          "x": 134.515625,
+          "y": 421.6719055175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45089,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45172,
+      "waitfor": 83,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45259,
+      "waitfor": 87,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[1]/view[1]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "‹",
+      "eventData": {
+        "detail": {
+          "x": 134.515625,
+          "y": 421.6719055175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 134.515625,
+            "clientY": 393.6719055175781,
+            "force": 1,
+            "pageX": 134.515625,
+            "pageY": 421.6719055175781,
+            "screenX": 967.5,
+            "screenY": 450
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[1]/view[1]"
+      ],
+      "timeStamp": 45259,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "二月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 157.09375,
+            "clientY": 446.8984680175781,
+            "force": 1,
+            "pageX": 157.09375,
+            "pageY": 474.8984680175781,
+            "screenX": 981.5,
+            "screenY": 483
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 157.09375,
+            "clientY": 446.8984680175781,
+            "force": 1,
+            "pageX": 157.09375,
+            "pageY": 474.8984680175781,
+            "screenX": 981.5,
+            "screenY": 483
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[2]"
+      ],
+      "timeStamp": 45799,
+      "waitfor": 540,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "二月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 157.09375,
+            "clientY": 446.8984680175781,
+            "pageX": 157.09375,
+            "pageY": 474.8984680175781,
+            "screenX": 981.5,
+            "screenY": 483
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[2]"
+      ],
+      "timeStamp": 45886,
+      "waitfor": 87,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[2]/view[2]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "二月",
+      "eventData": {
+        "detail": {
+          "x": 157.09375,
+          "y": 474.8984680175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 157.09375,
+            "clientY": 446.8984680175781,
+            "force": 1,
+            "pageX": 157.09375,
+            "pageY": 474.8984680175781,
+            "screenX": 981.5,
+            "screenY": 483
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 157.09375,
+            "clientY": 446.8984680175781,
+            "force": 1,
+            "pageX": 157.09375,
+            "pageY": 474.8984680175781,
+            "screenX": 981.5,
+            "screenY": 483
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[2]"
+      ],
+      "timeStamp": 45886,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 0,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 46045,
+      "waitfor": 159,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2023年2月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 210.3203125,
+            "clientY": 29.9609375,
+            "force": 1,
+            "pageX": 210.3203125,
+            "pageY": 29.9609375,
+            "screenX": 1014.5,
+            "screenY": 224.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 210.3203125,
+            "clientY": 29.9609375,
+            "force": 1,
+            "pageX": 210.3203125,
+            "pageY": 29.9609375,
+            "screenX": 1014.5,
+            "screenY": 224.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 52473,
+      "waitfor": 6428,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2023年2月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 210.3203125,
+            "clientY": 29.9609375,
+            "pageX": 210.3203125,
+            "pageY": 29.9609375,
+            "screenX": 1014.5,
+            "screenY": 224.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 52592,
+      "waitfor": 119,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2023年2月",
+      "eventData": {
+        "detail": {
+          "x": 210.3203125,
+          "y": 29.9609375
+        },
+        "changedTouches": [
+          {
+            "clientX": 210.3203125,
+            "clientY": 29.9609375,
+            "force": 1,
+            "pageX": 210.3203125,
+            "pageY": 29.9609375,
+            "screenX": 1014.5,
+            "screenY": 224.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 210.3203125,
+            "clientY": 29.9609375,
+            "force": 1,
+            "pageX": 210.3203125,
+            "pageY": 29.9609375,
+            "screenX": 1014.5,
+            "screenY": 224.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 52592,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[2]/view[8]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "八月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 324.0313720703125,
+            "clientY": 479.1562805175781,
+            "force": 1,
+            "pageX": 324.0313720703125,
+            "pageY": 479.1562805175781,
+            "screenX": 1085,
+            "screenY": 503
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 324.0313720703125,
+            "clientY": 479.1562805175781,
+            "force": 1,
+            "pageX": 324.0313720703125,
+            "pageY": 479.1562805175781,
+            "screenX": 1085,
+            "screenY": 503
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[8]"
+      ],
+      "timeStamp": 53631,
+      "waitfor": 1039,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[2]/view[8]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "八月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 324.8387451171875,
+            "clientY": 479.1612854003906,
+            "pageX": 324.8387451171875,
+            "pageY": 479.1612854003906,
+            "screenX": 1085.5,
+            "screenY": 503
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[8]"
+      ],
+      "timeStamp": 53736,
+      "waitfor": 105,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[2]/view[8]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "八月",
+      "eventData": {
+        "detail": {
+          "x": 324.8387451171875,
+          "y": 479.1612854003906
+        },
+        "changedTouches": [
+          {
+            "clientX": 324.0313720703125,
+            "clientY": 479.1562805175781,
+            "force": 1,
+            "pageX": 324.0313720703125,
+            "pageY": 479.1562805175781,
+            "screenX": 1085,
+            "screenY": 503
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 324.0313720703125,
+            "clientY": 479.1562805175781,
+            "force": 1,
+            "pageX": 324.0313720703125,
+            "pageY": 479.1562805175781,
+            "screenX": 1085,
+            "screenY": 503
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[2]/view[8]"
+      ],
+      "timeStamp": 53738,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.nav-title",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "2023年8月\n丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 207.09375,
+            "clientY": 35.609405517578125,
+            "force": 1,
+            "pageX": 207.09375,
+            "pageY": 35.609405517578125,
+            "screenX": 1012.5,
+            "screenY": 228
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 207.09375,
+            "clientY": 35.609405517578125,
+            "force": 1,
+            "pageX": 207.09375,
+            "pageY": 35.609405517578125,
+            "screenX": 1012.5,
+            "screenY": 228
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.nav-title",
+        ".nav-title",
+        "/view/view[1]/view[2]"
+      ],
+      "timeStamp": 54576,
+      "waitfor": 838,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.nav-title",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "2023年8月\n丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 207.09375,
+            "clientY": 35.609405517578125,
+            "pageX": 207.09375,
+            "pageY": 35.609405517578125,
+            "screenX": 1012.5,
+            "screenY": 228
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.nav-title",
+        ".nav-title",
+        "/view/view[1]/view[2]"
+      ],
+      "timeStamp": 54655,
+      "waitfor": 79,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.nav-title",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "2023年8月\n丙午年（马年）",
+      "eventData": {
+        "detail": {
+          "x": 207.09375,
+          "y": 35.609405517578125
+        },
+        "changedTouches": [
+          {
+            "clientX": 207.09375,
+            "clientY": 35.609405517578125,
+            "force": 1,
+            "pageX": 207.09375,
+            "pageY": 35.609405517578125,
+            "screenX": 1012.5,
+            "screenY": 228
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 207.09375,
+            "clientY": 35.609405517578125,
+            "force": 1,
+            "pageX": 207.09375,
+            "pageY": 35.609405517578125,
+            "screenX": 1012.5,
+            "screenY": 228
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.nav-title",
+        ".nav-title",
+        "/view/view[1]/view[2]"
+      ],
+      "timeStamp": 54657,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 207.8984375,
+            "clientY": 600.1251220703125,
+            "force": 1,
+            "pageX": 207.8984375,
+            "pageY": 600.1251220703125,
+            "screenX": 1013,
+            "screenY": 578
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 207.8984375,
+            "clientY": 600.1251220703125,
+            "force": 1,
+            "pageX": 207.8984375,
+            "pageY": 600.1251220703125,
+            "screenX": 1013,
+            "screenY": 578
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 55376,
+      "waitfor": 719,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 209.51611328125,
+            "clientY": 600.9354248046875,
+            "pageX": 209.51611328125,
+            "pageY": 600.9354248046875,
+            "screenX": 1014,
+            "screenY": 578.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 55493,
+      "waitfor": 117,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {
+          "x": 209.51611328125,
+          "y": 600.9354248046875
+        },
+        "changedTouches": [
+          {
+            "clientX": 207.8984375,
+            "clientY": 600.1251220703125,
+            "force": 1,
+            "pageX": 207.8984375,
+            "pageY": 600.1251220703125,
+            "screenX": 1013,
+            "screenY": 578
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 207.8984375,
+            "clientY": 600.1251220703125,
+            "force": 1,
+            "pageX": 207.8984375,
+            "pageY": 600.1251220703125,
+            "screenX": 1013,
+            "screenY": 578
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 55494,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[17]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 148.21875,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 148.21875,
+            "pageY": 347.7031555175781,
+            "screenX": 976,
+            "screenY": 421.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 148.21875,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 148.21875,
+            "pageY": 347.7031555175781,
+            "screenX": 976,
+            "screenY": 421.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]/text[2]"
+      ],
+      "timeStamp": 57203,
+      "waitfor": 1709,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[17]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 148.21875,
+            "clientY": 347.7031555175781,
+            "pageX": 148.21875,
+            "pageY": 347.7031555175781,
+            "screenX": 976,
+            "screenY": 421.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]/text[2]"
+      ],
+      "timeStamp": 57277,
+      "waitfor": 74,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[17]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿五",
+      "eventData": {
+        "detail": {
+          "x": 148.21875,
+          "y": 347.7031555175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 148.21875,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 148.21875,
+            "pageY": 347.7031555175781,
+            "screenX": 976,
+            "screenY": 421.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 148.21875,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 148.21875,
+            "pageY": 347.7031555175781,
+            "screenX": 976,
+            "screenY": 421.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]/text[2]"
+      ],
+      "timeStamp": 57277,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[24]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "19\n初二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 131.2890625,
+            "clientY": 417.0625305175781,
+            "force": 1,
+            "pageX": 131.2890625,
+            "pageY": 417.0625305175781,
+            "screenX": 965.5,
+            "screenY": 464.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 131.2890625,
+            "clientY": 417.0625305175781,
+            "force": 1,
+            "pageX": 131.2890625,
+            "pageY": 417.0625305175781,
+            "screenX": 965.5,
+            "screenY": 464.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[24]"
+      ],
+      "timeStamp": 57869,
+      "waitfor": 592,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[24]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "19\n初二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 131.2890625,
+            "clientY": 417.0625305175781,
+            "pageX": 131.2890625,
+            "pageY": 417.0625305175781,
+            "screenX": 965.5,
+            "screenY": 464.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[24]"
+      ],
+      "timeStamp": 57952,
+      "waitfor": 83,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[24]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "19\n初二",
+      "eventData": {
+        "detail": {
+          "x": 131.2890625,
+          "y": 417.0625305175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 131.2890625,
+            "clientY": 417.0625305175781,
+            "force": 1,
+            "pageX": 131.2890625,
+            "pageY": 417.0625305175781,
+            "screenX": 965.5,
+            "screenY": 464.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 131.2890625,
+            "clientY": 417.0625305175781,
+            "force": 1,
+            "pageX": 131.2890625,
+            "pageY": 417.0625305175781,
+            "screenX": 965.5,
+            "screenY": 464.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[24]"
+      ],
+      "timeStamp": 57952,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[16]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "11\n廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 111.9296875,
+            "clientY": 329.9609680175781,
+            "force": 1,
+            "pageX": 111.9296875,
+            "pageY": 329.9609680175781,
+            "screenX": 953.5,
+            "screenY": 410.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 111.9296875,
+            "clientY": 329.9609680175781,
+            "force": 1,
+            "pageX": 111.9296875,
+            "pageY": 329.9609680175781,
+            "screenX": 953.5,
+            "screenY": 410.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]"
+      ],
+      "timeStamp": 58243,
+      "waitfor": 291,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[16]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "11\n廿四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 111.9296875,
+            "clientY": 329.9609680175781,
+            "pageX": 111.9296875,
+            "pageY": 329.9609680175781,
+            "screenX": 953.5,
+            "screenY": 410.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]"
+      ],
+      "timeStamp": 58345,
+      "waitfor": 102,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[16]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "11\n廿四",
+      "eventData": {
+        "detail": {
+          "x": 111.9296875,
+          "y": 329.9609680175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 111.9296875,
+            "clientY": 329.9609680175781,
+            "force": 1,
+            "pageX": 111.9296875,
+            "pageY": 329.9609680175781,
+            "screenX": 953.5,
+            "screenY": 410.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 111.9296875,
+            "clientY": 329.9609680175781,
+            "force": 1,
+            "pageX": 111.9296875,
+            "pageY": 329.9609680175781,
+            "screenX": 953.5,
+            "screenY": 410.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]"
+      ],
+      "timeStamp": 58345,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[17]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "12\n廿五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 160.3203125,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 160.3203125,
+            "pageY": 349.3202819824219,
+            "screenX": 983.5,
+            "screenY": 422.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 160.3203125,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 160.3203125,
+            "pageY": 349.3202819824219,
+            "screenX": 983.5,
+            "screenY": 422.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]"
+      ],
+      "timeStamp": 58668,
+      "waitfor": 323,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[17]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "12\n廿五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 159.51611328125,
+            "clientY": 349.3226013183594,
+            "pageX": 159.51611328125,
+            "pageY": 349.3226013183594,
+            "screenX": 983,
+            "screenY": 422.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]"
+      ],
+      "timeStamp": 58770,
+      "waitfor": 102,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[17]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "12\n廿五",
+      "eventData": {
+        "detail": {
+          "x": 159.51611328125,
+          "y": 349.3226013183594
+        },
+        "changedTouches": [
+          {
+            "clientX": 160.3203125,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 160.3203125,
+            "pageY": 349.3202819824219,
+            "screenX": 983.5,
+            "screenY": 422.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 160.3203125,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 160.3203125,
+            "pageY": 349.3202819824219,
+            "screenX": 983.5,
+            "screenY": 422.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[17]"
+      ],
+      "timeStamp": 58770,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[19]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "14\n廿七",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 225.640625,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 225.640625,
+            "pageY": 347.7031555175781,
+            "screenX": 1024,
+            "screenY": 421.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 225.640625,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 225.640625,
+            "pageY": 347.7031555175781,
+            "screenX": 1024,
+            "screenY": 421.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[19]"
+      ],
+      "timeStamp": 59019,
+      "waitfor": 249,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[19]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "14\n廿七",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 225.640625,
+            "clientY": 347.7031555175781,
+            "pageX": 225.640625,
+            "pageY": 347.7031555175781,
+            "screenX": 1024,
+            "screenY": 421.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[19]"
+      ],
+      "timeStamp": 59103,
+      "waitfor": 84,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[19]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "14\n廿七",
+      "eventData": {
+        "detail": {
+          "x": 225.640625,
+          "y": 347.7031555175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 225.640625,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 225.640625,
+            "pageY": 347.7031555175781,
+            "screenX": 1024,
+            "screenY": 421.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 225.640625,
+            "clientY": 347.7031555175781,
+            "force": 1,
+            "pageX": 225.640625,
+            "pageY": 347.7031555175781,
+            "screenX": 1024,
+            "screenY": 421.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[19]"
+      ],
+      "timeStamp": 59106,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[20]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿八",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 299.8359375,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 299.8359375,
+            "pageY": 349.3202819824219,
+            "screenX": 1070,
+            "screenY": 422.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 299.8359375,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 299.8359375,
+            "pageY": 349.3202819824219,
+            "screenX": 1070,
+            "screenY": 422.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[20]/text[2]"
+      ],
+      "timeStamp": 59394,
+      "waitfor": 288,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[20]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿八",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 299.8359375,
+            "clientY": 349.3202819824219,
+            "pageX": 299.8359375,
+            "pageY": 349.3202819824219,
+            "screenX": 1070,
+            "screenY": 422.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[20]/text[2]"
+      ],
+      "timeStamp": 59482,
+      "waitfor": 88,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[20]/text[2]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "廿八",
+      "eventData": {
+        "detail": {
+          "x": 299.8359375,
+          "y": 349.3202819824219
+        },
+        "changedTouches": [
+          {
+            "clientX": 299.8359375,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 299.8359375,
+            "pageY": 349.3202819824219,
+            "screenX": 1070,
+            "screenY": 422.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 299.8359375,
+            "clientY": 349.3202819824219,
+            "force": 1,
+            "pageX": 299.8359375,
+            "pageY": 349.3202819824219,
+            "screenX": 1070,
+            "screenY": 422.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[20]/text[2]"
+      ],
+      "timeStamp": 59482,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[26]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "21\n初四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 263.546875,
+            "clientY": 430.7734680175781,
+            "force": 1,
+            "pageX": 263.546875,
+            "pageY": 430.7734680175781,
+            "screenX": 1047.5,
+            "screenY": 473
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 263.546875,
+            "clientY": 430.7734680175781,
+            "force": 1,
+            "pageX": 263.546875,
+            "pageY": 430.7734680175781,
+            "screenX": 1047.5,
+            "screenY": 473
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[26]"
+      ],
+      "timeStamp": 59789,
+      "waitfor": 307,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[26]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "21\n初四",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 265.9677734375,
+            "clientY": 433.1935119628906,
+            "pageX": 265.9677734375,
+            "pageY": 433.1935119628906,
+            "screenX": 1049,
+            "screenY": 474.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[26]"
+      ],
+      "timeStamp": 59875,
+      "waitfor": 86,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[26]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "21\n初四",
+      "eventData": {
+        "detail": {
+          "x": 265.9677734375,
+          "y": 433.1935119628906
+        },
+        "changedTouches": [
+          {
+            "clientX": 263.546875,
+            "clientY": 430.7734680175781,
+            "force": 1,
+            "pageX": 263.546875,
+            "pageY": 430.7734680175781,
+            "screenX": 1047.5,
+            "screenY": 473
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 263.546875,
+            "clientY": 430.7734680175781,
+            "force": 1,
+            "pageX": 263.546875,
+            "pageY": 430.7734680175781,
+            "screenX": 1047.5,
+            "screenY": 473
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[26]"
+      ],
+      "timeStamp": 59875,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[34]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "29\n十二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 311.1248779296875,
+            "clientY": 458.1875305175781,
+            "force": 1,
+            "pageX": 311.1248779296875,
+            "pageY": 458.1875305175781,
+            "screenX": 1077,
+            "screenY": 490
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 311.1248779296875,
+            "clientY": 458.1875305175781,
+            "force": 1,
+            "pageX": 311.1248779296875,
+            "pageY": 458.1875305175781,
+            "screenX": 1077,
+            "screenY": 490
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[34]"
+      ],
+      "timeStamp": 61125,
+      "waitfor": 1250,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[34]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "29\n十二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 311.1248779296875,
+            "clientY": 458.1875305175781,
+            "pageX": 311.1248779296875,
+            "pageY": 458.1875305175781,
+            "screenX": 1077,
+            "screenY": 490
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[34]"
+      ],
+      "timeStamp": 61236,
+      "waitfor": 111,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[34]",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "29\n十二",
+      "eventData": {
+        "detail": {
+          "x": 311.1248779296875,
+          "y": 458.1875305175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 311.1248779296875,
+            "clientY": 458.1875305175781,
+            "force": 1,
+            "pageX": 311.1248779296875,
+            "pageY": 458.1875305175781,
+            "screenX": 1077,
+            "screenY": 490
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 311.1248779296875,
+            "clientY": 458.1875305175781,
+            "force": 1,
+            "pageX": 311.1248779296875,
+            "pageY": 458.1875305175781,
+            "screenX": 1077,
+            "screenY": 490
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[34]"
+      ],
+      "timeStamp": 61238,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 28,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 62385,
+      "waitfor": 1147,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 64235,
+      "waitfor": 1850,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "节气",
+      "data": {
+        "url": "pages/solar-term/solar-term"
+      }
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/solar-term/solar-term",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 645.1613159179688,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 66697,
+      "waitfor": 2462,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/solar-term/solar-term",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 322.58062744140625,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 67219,
+      "waitfor": 522,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.term-badge",
+      "value": null,
+      "path": "pages/solar-term/solar-term",
+      "text": "当前",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 335.3203125,
+            "clientY": 348.51568603515625,
+            "force": 1,
+            "pageX": 335.3203125,
+            "pageY": 671.0963134765625,
+            "screenX": 1092,
+            "screenY": 422
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 335.3203125,
+            "clientY": 348.51568603515625,
+            "force": 1,
+            "pageX": 335.3203125,
+            "pageY": 671.0963134765625,
+            "screenX": 1092,
+            "screenY": 422
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.term-badge",
+        ".term-badge",
+        "/view/view[2]/view[10]/view/view"
+      ],
+      "timeStamp": 78991,
+      "waitfor": 10000,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.term-badge",
+      "value": null,
+      "path": "pages/solar-term/solar-term",
+      "text": "当前",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 335.3203125,
+            "clientY": 348.51568603515625,
+            "pageX": 335.3203125,
+            "pageY": 671.0963134765625,
+            "screenX": 1092,
+            "screenY": 422
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.term-badge",
+        ".term-badge",
+        "/view/view[2]/view[10]/view/view"
+      ],
+      "timeStamp": 79097,
+      "waitfor": 106,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.term-badge",
+      "value": null,
+      "path": "pages/solar-term/solar-term",
+      "text": "当前",
+      "eventData": {
+        "detail": {
+          "x": 335.3203125,
+          "y": 671.0963134765625
+        },
+        "changedTouches": [
+          {
+            "clientX": 335.3203125,
+            "clientY": 348.51568603515625,
+            "force": 1,
+            "pageX": 335.3203125,
+            "pageY": 671.0963134765625,
+            "screenX": 1092,
+            "screenY": 422
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 335.3203125,
+            "clientY": 348.51568603515625,
+            "force": 1,
+            "pageX": 335.3203125,
+            "pageY": 671.0963134765625,
+            "screenX": 1092,
+            "screenY": 422
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.term-badge",
+        ".term-badge",
+        "/view/view[2]/view[10]/view/view"
+      ],
+      "timeStamp": 79101,
+      "waitfor": 4,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 80417,
+      "waitfor": 1316,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "节假日",
+      "data": {
+        "url": "pages/holiday/holiday"
+      }
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/holiday/holiday",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 322.5806579589844,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 86752,
+      "waitfor": 6335,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[5]/view[1]",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "端午节\n共 3 天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 329.1562805175781,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 651.7369384765625,
+            "screenX": 1006.5,
+            "screenY": 410
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 329.1562805175781,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 651.7369384765625,
+            "screenX": 1006.5,
+            "screenY": 410
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[1]"
+      ],
+      "timeStamp": 87268,
+      "waitfor": 516,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[3]/view[5]/view[1]",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "端午节\n共 3 天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 202.258056640625,
+            "clientY": 337.2257995605469,
+            "pageX": 202.258056640625,
+            "pageY": 659.8064575195312,
+            "screenX": 1009.5,
+            "screenY": 415
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[1]"
+      ],
+      "timeStamp": 87379,
+      "waitfor": 111,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[3]/view[5]/view[1]",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "端午节\n共 3 天",
+      "eventData": {
+        "detail": {
+          "x": 202.258056640625,
+          "y": 659.8064575195312
+        },
+        "changedTouches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 329.1562805175781,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 651.7369384765625,
+            "screenX": 1006.5,
+            "screenY": 410
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 329.1562805175781,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 651.7369384765625,
+            "screenX": 1006.5,
+            "screenY": 410
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[1]"
+      ],
+      "timeStamp": 87383,
+      "waitfor": 4,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 87863,
+      "waitfor": 480,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 87967,
+      "waitfor": 104,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {
+          "x": 199.03125,
+          "y": 672.7056274414062
+        },
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 87969,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 88436,
+      "waitfor": 467,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 88546,
+      "waitfor": 110,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[3]/view[5]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-06-19\n至 2026-06-21",
+      "eventData": {
+        "detail": {
+          "x": 199.03125,
+          "y": 672.7056274414062
+        },
+        "changedTouches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 199.03125,
+            "clientY": 350.1249694824219,
+            "force": 1,
+            "pageX": 199.03125,
+            "pageY": 672.7056274414062,
+            "screenX": 1007.5,
+            "screenY": 423
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view"
+      ],
+      "timeStamp": 88547,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/holiday/holiday",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 0,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 89474,
+      "waitfor": 927,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/holiday/holiday",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 322.5806579589844,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 90107,
+      "waitfor": 633,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[5]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 168.3828125,
+            "clientY": 356.5781555175781,
+            "force": 1,
+            "pageX": 168.3828125,
+            "pageY": 679.1588134765625,
+            "screenX": 988.5,
+            "screenY": 427
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 168.3828125,
+            "clientY": 356.5781555175781,
+            "force": 1,
+            "pageX": 168.3828125,
+            "pageY": 679.1588134765625,
+            "screenX": 988.5,
+            "screenY": 427
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 90831,
+      "waitfor": 724,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/view[3]/view[5]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-06-21",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 168.3828125,
+            "clientY": 356.5781555175781,
+            "pageX": 168.3828125,
+            "pageY": 679.1588134765625,
+            "screenX": 988.5,
+            "screenY": 427
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 90926,
+      "waitfor": 95,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/view[3]/view[5]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-06-21",
+      "eventData": {
+        "detail": {
+          "x": 168.3828125,
+          "y": 679.1588134765625
+        },
+        "changedTouches": [
+          {
+            "clientX": 168.3828125,
+            "clientY": 356.5781555175781,
+            "force": 1,
+            "pageX": 168.3828125,
+            "pageY": 679.1588134765625,
+            "screenX": 988.5,
+            "screenY": 427
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 168.3828125,
+            "clientY": 356.5781555175781,
+            "force": 1,
+            "pageX": 168.3828125,
+            "pageY": 679.1588134765625,
+            "screenX": 988.5,
+            "screenY": 427
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[5]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 90929,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[6]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-09-27",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 190.15625,
+            "clientY": 473.5156555175781,
+            "force": 1,
+            "pageX": 190.15625,
+            "pageY": 796.0963134765625,
+            "screenX": 1002,
+            "screenY": 499.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 190.15625,
+            "clientY": 473.5156555175781,
+            "force": 1,
+            "pageX": 190.15625,
+            "pageY": 796.0963134765625,
+            "screenX": 1002,
+            "screenY": 499.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[6]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 91370,
+      "waitfor": 441,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/view[3]/view[6]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-09-27",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 190.15625,
+            "clientY": 473.5156555175781,
+            "pageX": 190.15625,
+            "pageY": 796.0963134765625,
+            "screenX": 1002,
+            "screenY": 499.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[6]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 91484,
+      "waitfor": 114,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/view[3]/view[6]/view[2]/view/text[3]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/holiday/holiday",
+      "text": "至 2026-09-27",
+      "eventData": {
+        "detail": {
+          "x": 190.15625,
+          "y": 796.0963134765625
+        },
+        "changedTouches": [
+          {
+            "clientX": 190.15625,
+            "clientY": 473.5156555175781,
+            "force": 1,
+            "pageX": 190.15625,
+            "pageY": 796.0963134765625,
+            "screenX": 1002,
+            "screenY": 499.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 190.15625,
+            "clientY": 473.5156555175781,
+            "force": 1,
+            "pageX": 190.15625,
+            "pageY": 796.0963134765625,
+            "screenX": 1002,
+            "screenY": 499.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[6]/view[2]/view/text[3]"
+      ],
+      "timeStamp": 91488,
+      "waitfor": 4,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "/view/view[3]/view[7]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-10-01\n至 2026-10-08",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 198.21875,
+            "clientY": 577.546875,
+            "force": 1,
+            "pageX": 198.21875,
+            "pageY": 900.1275634765625,
+            "screenX": 1007,
+            "screenY": 564
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 198.21875,
+            "clientY": 577.546875,
+            "force": 1,
+            "pageX": 198.21875,
+            "pageY": 900.1275634765625,
+            "screenX": 1007,
+            "screenY": 564
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[7]/view[2]/view"
+      ],
+      "timeStamp": 91765,
+      "waitfor": 277,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "/view/view[3]/view[7]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-10-01\n至 2026-10-08",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 202.258056640625,
+            "clientY": 590.45166015625,
+            "pageX": 202.258056640625,
+            "pageY": 913.0323486328125,
+            "screenX": 1009.5,
+            "screenY": 572
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[7]/view[2]/view"
+      ],
+      "timeStamp": 91888,
+      "waitfor": 123,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "/view/view[3]/view[7]/view[2]/view",
+      "value": null,
+      "path": "pages/holiday/holiday",
+      "text": "2026-10-01\n至 2026-10-08",
+      "eventData": {
+        "detail": {
+          "x": 202.258056640625,
+          "y": 913.0323486328125
+        },
+        "changedTouches": [
+          {
+            "clientX": 198.21875,
+            "clientY": 577.546875,
+            "force": 1,
+            "pageX": 198.21875,
+            "pageY": 900.1275634765625,
+            "screenX": 1007,
+            "screenY": 564
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 198.21875,
+            "clientY": 577.546875,
+            "force": 1,
+            "pageX": 198.21875,
+            "pageY": 900.1275634765625,
+            "screenX": 1007,
+            "screenY": 564
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/view[3]/view[7]/view[2]/view"
+      ],
+      "timeStamp": 91891,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/holiday/holiday",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 337.5,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 92485,
+      "waitfor": 594,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 93384,
+      "waitfor": 899,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "日历",
+      "data": {
+        "url": "pages/index/index"
+      }
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 0,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 94342,
+      "waitfor": 958,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2026年5月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 218.3828125,
+            "clientY": 30.7734375,
+            "force": 1,
+            "pageX": 218.3828125,
+            "pageY": 30.7734375,
+            "screenX": 1019.5,
+            "screenY": 225
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 218.3828125,
+            "clientY": 30.7734375,
+            "force": 1,
+            "pageX": 218.3828125,
+            "pageY": 30.7734375,
+            "screenX": 1019.5,
+            "screenY": 225
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 96532,
+      "waitfor": 2190,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2026年5月",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 218.3828125,
+            "clientY": 30.7734375,
+            "pageX": 218.3828125,
+            "pageY": 30.7734375,
+            "screenX": 1019.5,
+            "screenY": 225
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 96619,
+      "waitfor": 87,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.nav-year",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "2026年5月",
+      "eventData": {
+        "detail": {
+          "x": 218.3828125,
+          "y": 30.7734375
+        },
+        "changedTouches": [
+          {
+            "clientX": 218.3828125,
+            "clientY": 30.7734375,
+            "force": 1,
+            "pageX": 218.3828125,
+            "pageY": 30.7734375,
+            "screenX": 1019.5,
+            "screenY": 225
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 218.3828125,
+            "clientY": 30.7734375,
+            "force": 1,
+            "pageX": 218.3828125,
+            "pageY": 30.7734375,
+            "screenX": 1019.5,
+            "screenY": 225
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-year",
+        ".nav-year",
+        "/view/view[1]/view[2]/text[1]"
+      ],
+      "timeStamp": 96622,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 195.8046875,
+            "clientY": 600.9298095703125,
+            "force": 1,
+            "pageX": 195.8046875,
+            "pageY": 600.9298095703125,
+            "screenX": 1005.5,
+            "screenY": 578.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 195.8046875,
+            "clientY": 600.9298095703125,
+            "force": 1,
+            "pageX": 195.8046875,
+            "pageY": 600.9298095703125,
+            "screenX": 1005.5,
+            "screenY": 578.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 97807,
+      "waitfor": 1185,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 195.8046875,
+            "clientY": 600.9298095703125,
+            "pageX": 195.8046875,
+            "pageY": 600.9298095703125,
+            "screenX": 1005.5,
+            "screenY": 578.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 97898,
+      "waitfor": 91,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {
+          "x": 195.8046875,
+          "y": 600.9298095703125
+        },
+        "changedTouches": [
+          {
+            "clientX": 195.8046875,
+            "clientY": 600.9298095703125,
+            "force": 1,
+            "pageX": 195.8046875,
+            "pageY": 600.9298095703125,
+            "screenX": 1005.5,
+            "screenY": 578.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 195.8046875,
+            "clientY": 600.9298095703125,
+            "force": 1,
+            "pageX": 195.8046875,
+            "pageY": 600.9298095703125,
+            "screenX": 1005.5,
+            "screenY": 578.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 97900,
+      "waitfor": 2,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 28,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 99263,
+      "waitfor": 1363,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "",
+      "command": "scroll",
+      "target": "/",
+      "path": "pages/index/index",
+      "eventData": {
+        "scrollDetail": {
+          "scrollTop": 0,
+          "scrollLeft": 0
+        }
+      },
+      "targetCandidates": [],
+      "timeStamp": 100352,
+      "waitfor": 1089,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.next-holiday",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "端午节\n还有 40 天\n›",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 608.1875,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 608.1875,
+            "screenX": 1006.5,
+            "screenY": 583
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 608.1875,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 608.1875,
+            "screenX": 1006.5,
+            "screenY": 583
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.next-holiday",
+        ".next-holiday",
+        "/view/view[3]"
+      ],
+      "timeStamp": 100689,
+      "waitfor": 337,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.next-holiday",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "端午节\n还有 40 天\n›",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 608.1875,
+            "pageX": 197.4140625,
+            "pageY": 608.1875,
+            "screenX": 1006.5,
+            "screenY": 583
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.next-holiday",
+        ".next-holiday",
+        "/view/view[3]"
+      ],
+      "timeStamp": 100783,
+      "waitfor": 94,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.next-holiday",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "端午节\n还有 40 天\n›",
+      "eventData": {
+        "detail": {
+          "x": 197.4140625,
+          "y": 608.1875
+        },
+        "changedTouches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 608.1875,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 608.1875,
+            "screenX": 1006.5,
+            "screenY": 583
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 197.4140625,
+            "clientY": 608.1875,
+            "force": 1,
+            "pageX": 197.4140625,
+            "pageY": 608.1875,
+            "screenX": 1006.5,
+            "screenY": 583
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.next-holiday",
+        ".next-holiday",
+        "/view/view[3]"
+      ],
+      "timeStamp": 100789,
+      "waitfor": 6,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 104368,
+      "waitfor": 3579,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "switchTab",
+      "text": "日历",
+      "data": {
+        "url": "pages/index/index"
+      }
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 220.8046875,
+            "clientY": 38.8359375,
+            "force": 1,
+            "pageX": 220.8046875,
+            "pageY": 38.8359375,
+            "screenX": 1021,
+            "screenY": 230
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 220.8046875,
+            "clientY": 38.8359375,
+            "force": 1,
+            "pageX": 220.8046875,
+            "pageY": 38.8359375,
+            "screenX": 1021,
+            "screenY": 230
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 109635,
+      "waitfor": 5267,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 220.8046875,
+            "clientY": 38.8359375,
+            "pageX": 220.8046875,
+            "pageY": 38.8359375,
+            "screenX": 1021,
+            "screenY": 230
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 109721,
+      "waitfor": 86,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.nav-lunar",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "丙午年（马年）",
+      "eventData": {
+        "detail": {
+          "x": 220.8046875,
+          "y": 38.8359375
+        },
+        "changedTouches": [
+          {
+            "clientX": 220.8046875,
+            "clientY": 38.8359375,
+            "force": 1,
+            "pageX": 220.8046875,
+            "pageY": 38.8359375,
+            "screenX": 1021,
+            "screenY": 230
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 220.8046875,
+            "clientY": 38.8359375,
+            "force": 1,
+            "pageX": 220.8046875,
+            "pageY": 38.8359375,
+            "screenX": 1021,
+            "screenY": 230
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.nav-lunar",
+        ".nav-lunar",
+        "/view/view[1]/view[2]/text[2]"
+      ],
+      "timeStamp": 109721,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 212.734375,
+            "clientY": 604.9609375,
+            "force": 1,
+            "pageX": 212.734375,
+            "pageY": 604.9609375,
+            "screenX": 1016,
+            "screenY": 581
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 212.734375,
+            "clientY": 604.9609375,
+            "force": 1,
+            "pageX": 212.734375,
+            "pageY": 604.9609375,
+            "screenX": 1016,
+            "screenY": 581
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 110585,
+      "waitfor": 864,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 212.734375,
+            "clientY": 604.9609375,
+            "pageX": 212.734375,
+            "pageY": 604.9609375,
+            "screenX": 1016,
+            "screenY": 581
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 110682,
+      "waitfor": 97,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/month-picker/view/view/view[3]/text",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "回到今天",
+      "eventData": {
+        "detail": {
+          "x": 212.734375,
+          "y": 604.9609375
+        },
+        "changedTouches": [
+          {
+            "clientX": 212.734375,
+            "clientY": 604.9609375,
+            "force": 1,
+            "pageX": 212.734375,
+            "pageY": 604.9609375,
+            "screenX": 1016,
+            "screenY": 581
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 212.734375,
+            "clientY": 604.9609375,
+            "force": 1,
+            "pageX": 212.734375,
+            "pageY": 604.9609375,
+            "screenX": 1016,
+            "screenY": 581
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/month-picker/view/view/view[3]/text"
+      ],
+      "timeStamp": 110682,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchstart",
+      "target": "view.date-info-card",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "5月29日\n星期五\n四月十二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 115.9609375,
+            "clientY": 114.640625,
+            "force": 1,
+            "pageX": 115.9609375,
+            "pageY": 114.640625,
+            "screenX": 956,
+            "screenY": 277
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 115.9609375,
+            "clientY": 114.640625,
+            "force": 1,
+            "pageX": 115.9609375,
+            "pageY": 114.640625,
+            "screenX": 956,
+            "screenY": 277
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.date-info-card",
+        ".date-info-card",
+        "/view/view[2]"
+      ],
+      "timeStamp": 136361,
+      "waitfor": 10000,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "touchend",
+      "target": "view.date-info-card",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "5月29日\n星期五\n四月十二",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 115.9609375,
+            "clientY": 114.640625,
+            "pageX": 115.9609375,
+            "pageY": 114.640625,
+            "screenX": 956,
+            "screenY": 277
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "view.date-info-card",
+        ".date-info-card",
+        "/view/view[2]"
+      ],
+      "timeStamp": 136436,
+      "waitfor": 75,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "view",
+      "command": "tap",
+      "target": "view.date-info-card",
+      "value": null,
+      "path": "pages/index/index",
+      "text": "5月29日\n星期五\n四月十二",
+      "eventData": {
+        "detail": {
+          "x": 115.9609375,
+          "y": 114.640625
+        },
+        "changedTouches": [
+          {
+            "clientX": 115.9609375,
+            "clientY": 114.640625,
+            "force": 1,
+            "pageX": 115.9609375,
+            "pageY": 114.640625,
+            "screenX": 956,
+            "screenY": 277
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 115.9609375,
+            "clientY": 114.640625,
+            "force": 1,
+            "pageX": 115.9609375,
+            "pageY": 114.640625,
+            "screenX": 956,
+            "screenY": 277
+          }
+        ]
+      },
+      "targetCandidates": [
+        "view.date-info-card",
+        ".date-info-card",
+        "/view/view[2]"
+      ],
+      "timeStamp": 136436,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "text.info-week",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "星期五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 139.3515625,
+            "clientY": 107.38284301757812,
+            "force": 1,
+            "pageX": 139.3515625,
+            "pageY": 107.38284301757812,
+            "screenX": 970.5,
+            "screenY": 272.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 139.3515625,
+            "clientY": 107.38284301757812,
+            "force": 1,
+            "pageX": 139.3515625,
+            "pageY": 107.38284301757812,
+            "screenX": 970.5,
+            "screenY": 272.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-week",
+        ".info-week",
+        "/view/view[2]/view[1]/text[2]"
+      ],
+      "timeStamp": 137111,
+      "waitfor": 675,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "text.info-week",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "星期五",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 139.3515625,
+            "clientY": 107.38284301757812,
+            "pageX": 139.3515625,
+            "pageY": 107.38284301757812,
+            "screenX": 970.5,
+            "screenY": 272.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "text.info-week",
+        ".info-week",
+        "/view/view[2]/view[1]/text[2]"
+      ],
+      "timeStamp": 137234,
+      "waitfor": 123,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "text.info-week",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "星期五",
+      "eventData": {
+        "detail": {
+          "x": 139.3515625,
+          "y": 107.38284301757812
+        },
+        "changedTouches": [
+          {
+            "clientX": 139.3515625,
+            "clientY": 107.38284301757812,
+            "force": 1,
+            "pageX": 139.3515625,
+            "pageY": 107.38284301757812,
+            "screenX": 970.5,
+            "screenY": 272.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 139.3515625,
+            "clientY": 107.38284301757812,
+            "force": 1,
+            "pageX": 139.3515625,
+            "pageY": 107.38284301757812,
+            "screenX": 970.5,
+            "screenY": 272.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "text.info-week",
+        ".info-week",
+        "/view/view[2]/view[1]/text[2]"
+      ],
+      "timeStamp": 137235,
+      "waitfor": 1,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 140023,
+      "waitfor": 2788,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "native",
+      "command": "navigateLeft",
+      "text": ""
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 82.09375,
+            "clientY": 336.4140930175781,
+            "force": 1,
+            "pageX": 82.09375,
+            "pageY": 336.4140930175781,
+            "screenX": 935,
+            "screenY": 414.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 82.09375,
+            "clientY": 336.4140930175781,
+            "force": 1,
+            "pageX": 82.09375,
+            "pageY": 336.4140930175781,
+            "screenX": 935,
+            "screenY": 414.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 141448,
+      "waitfor": 1425,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 82.09375,
+            "clientY": 336.4140930175781,
+            "pageX": 82.09375,
+            "pageY": 336.4140930175781,
+            "screenX": 935,
+            "screenY": 414.5
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 141535,
+      "waitfor": 87,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {
+          "x": 82.09375,
+          "y": 336.4140930175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 82.09375,
+            "clientY": 336.4140930175781,
+            "force": 1,
+            "pageX": 82.09375,
+            "pageY": 336.4140930175781,
+            "screenX": 935,
+            "screenY": 414.5
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 82.09375,
+            "clientY": 336.4140930175781,
+            "force": 1,
+            "pageX": 82.09375,
+            "pageY": 336.4140930175781,
+            "screenX": 935,
+            "screenY": 414.5
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 141538,
+      "waitfor": 3,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchstart",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 90.9609375,
+            "clientY": 338.8359680175781,
+            "force": 1,
+            "pageX": 90.9609375,
+            "pageY": 338.8359680175781,
+            "screenX": 940.5,
+            "screenY": 416
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 90.9609375,
+            "clientY": 338.8359680175781,
+            "force": 1,
+            "pageX": 90.9609375,
+            "pageY": 338.8359680175781,
+            "screenX": 940.5,
+            "screenY": 416
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 142941,
+      "waitfor": 1403,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "touchend",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {},
+        "changedTouches": [
+          {
+            "clientX": 90.9609375,
+            "clientY": 338.8359680175781,
+            "pageX": 90.9609375,
+            "pageY": 338.8359680175781,
+            "screenX": 940.5,
+            "screenY": 416
+          }
+        ],
+        "touches": []
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 143045,
+      "waitfor": 104,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "tagName": "text",
+      "command": "tap",
+      "target": "/view/calendar-grid/view/view[2]/view[16]/text[1]",
+      "value": null,
+      "childName": "main",
+      "path": "pages/index/index",
+      "text": "11",
+      "eventData": {
+        "detail": {
+          "x": 90.9609375,
+          "y": 338.8359680175781
+        },
+        "changedTouches": [
+          {
+            "clientX": 90.9609375,
+            "clientY": 338.8359680175781,
+            "force": 1,
+            "pageX": 90.9609375,
+            "pageY": 338.8359680175781,
+            "screenX": 940.5,
+            "screenY": 416
+          }
+        ],
+        "touches": [
+          {
+            "clientX": 90.9609375,
+            "clientY": 338.8359680175781,
+            "force": 1,
+            "pageX": 90.9609375,
+            "pageY": 338.8359680175781,
+            "screenX": 940.5,
+            "screenY": 416
+          }
+        ]
+      },
+      "targetCandidates": [
+        "/view/calendar-grid/view/view[2]/view[16]/text[1]"
+      ],
+      "timeStamp": 143045,
+      "waitfor": 0,
+      "desc": "",
+      "commandType": "operate",
+      "layer": "pageframe"
+    },
+    {
+      "timeStamp": 178723,
+      "waitfor": 10000,
+      "desc": "",
+      "layer": "tool",
+      "commandType": "operate",
+      "command": "stopRecord"
+    }
+  ]
+}

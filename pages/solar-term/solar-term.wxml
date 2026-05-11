@@ -1,0 +1,24 @@
+<view class="page">
+  <!-- 年份标题 (只显示当年) -->
+  <view class="year-nav">
+    <text class="year-text">{{year}}年 节气表</text>
+  </view>
+
+  <!-- 节气列表 -->
+  <view class="term-list">
+    <view class="term-group" wx:for="{{terms}}" wx:key="dateStr" wx:for-item="term" wx:for-index="idx">
+      <!-- 按月份分组标记 -->
+      <view class="month-divider" wx:if="{{idx % 2 === 0}}">
+        <text>{{term.month}}月</text>
+      </view>
+
+      <view class="term-item {{idx === currentIndex ? 'current' : ''}} {{idx < currentIndex ? 'past' : ''}}">
+        <text class="term-name">{{term.name}}</text>
+        <text class="term-date">{{term.month}}月{{term.day}}日</text>
+        <view class="term-badge" wx:if="{{idx === currentIndex}}">
+          <text class="badge-text">当前</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

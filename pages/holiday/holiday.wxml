@@ -1,0 +1,47 @@
+<view class="page">
+  <!-- 下一个节假日卡片 -->
+  <view class="next-card" wx:if="{{nextHoliday && nextHoliday.daysUntil > 0}}">
+    <text class="next-label">距下一个假期</text>
+    <text class="next-count">{{nextHoliday.daysUntil}}</text>
+    <text class="next-unit">天</text>
+    <text class="next-name">{{nextHoliday.name}}</text>
+  </view>
+
+  <!-- 年份导航 -->
+  <view class="year-nav">
+    <view class="nav-btn" bindtap="onPrevYear">
+      <text>‹</text>
+    </view>
+    <text class="year-text">{{year}}年放假安排</text>
+    <view class="nav-btn" bindtap="onNextYear">
+      <text>›</text>
+    </view>
+  </view>
+
+  <!-- 假期列表 -->
+  <view class="holiday-list">
+    <view class="holiday-card {{item.isPast ? 'past' : ''}}" wx:for="{{holidays}}" wx:key="name">
+      <view class="card-header">
+        <text class="card-name">{{item.name}}</text>
+        <text class="card-days">共 {{item.totalDays}} 天</text>
+      </view>
+
+      <view class="card-dates">
+        <view class="date-tag holiday-tag">
+          <text class="tag-dot green"></text>
+          <text>{{item.holidays[0]}}</text>
+          <text wx:if="{{item.holidays.length > 1}}"> 至 {{item.holidays[item.holidays.length - 1]}}</text>
+        </view>
+      </view>
+
+      <view class="card-workdays" wx:if="{{item.workdays && item.workdays.length > 0}}">
+        <text class="workday-label">调休上班：</text>
+        <text class="workday-date" wx:for="{{item.workdays}}" wx:for-item="wd" wx:key="*this">{{wd}}</text>
+      </view>
+
+      <view class="card-countdown" wx:if="{{item.daysUntil > 0}}">
+        <text class="countdown-text">{{item.daysUntil}} 天后</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>万年历小程序 UI 预览</title>
+  <style>
+    :root {
+      --color-primary: #E85D3A;
+      --color-primary-light: #FFF0EC;
+      --color-text-primary: #333333;
+      --color-text-secondary: #666666;
+      --color-text-tertiary: #999999;
+      --color-text-weekend: #E85D3A;
+      --color-bg-card: #FFFFFF;
+      --color-bg-page: #F5F5F5;
+      --color-border: #EEEEEE;
+      --color-solar-term: #389E0D;
+      --color-festival: #D4380D;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      background: #E8E8E8;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 20px;
+    }
+    .phone-frame {
+      width: 375px;
+      height: 812px;
+      background: var(--color-bg-page);
+      border-radius: 40px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3), inset 0 0 0 2px rgba(0,0,0,0.08);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .status-bar {
+      height: 44px;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .nav-bar {
+      height: 44px;
+      background: var(--color-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+    }
+    .content {
+      flex: 1;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .content::-webkit-scrollbar { display: none; }
+
+    /* Month Nav */
+    .month-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 15px;
+      background: var(--color-primary);
+      color: #fff;
+    }
+    .nav-arrow {
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; background: rgba(255,255,255,0.2);
+      cursor: pointer; user-select: none;
+      font-size: 16px;
+    }
+    .nav-arrow:active { background: rgba(255,255,255,0.35); }
+    .nav-title {
+      display: flex; flex-direction: column; align-items: center; flex: 1;
+      cursor: pointer;
+    }
+    .nav-year { font-size: 17px; font-weight: 500; }
+    .nav-lunar { font-size: 11px; opacity: 0.85; margin-top: 2px; }
+
+    /* Date Info Card */
+    .date-info-card {
+      margin: 10px; padding: 14px;
+      background: var(--color-bg-card); border-radius: 12px;
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer;
+    }
+    .info-main { display: flex; align-items: baseline; gap: 6px; }
+    .info-date { font-size: 20px; font-weight: 500; color: var(--color-text-primary); }
+    .info-week { font-size: 13px; color: var(--color-text-secondary); }
+    .info-sub { display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+    .info-lunar { font-size: 13px; color: var(--color-text-secondary); }
+    .info-term { font-size: 11px; color: var(--color-solar-term); }
+    .info-festival { font-size: 11px; color: var(--color-festival); font-weight: 500; }
+
+    /* Calendar Grid */
+    .calendar-grid { padding: 10px; background: var(--color-bg-card); }
+    .week-header {
+      display: flex; padding-bottom: 8px;
+      border-bottom: 0.5px solid var(--color-border); margin-bottom: 4px;
+    }
+    .week-item { flex: 1; text-align: center; padding: 4px 0; }
+    .week-text { font-size: 12px; color: var(--color-text-secondary); }
+    .week-text.weekend { color: var(--color-text-weekend); }
+    .day-grid { display: flex; flex-wrap: wrap; }
+    .day-cell {
+      width: 14.285%; height: 56px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      border-radius: 6px; cursor: pointer;
+      transition: background-color 0.15s;
+    }
+    .day-cell:active { background: var(--color-primary-light); }
+    .day-cell.other-month { opacity: 0.25; }
+    .solar-day {
+      font-size: 15px; font-weight: 500; color: var(--color-text-primary); line-height: 1.4;
+    }
+    .lunar-text {
+      font-size: 9px; color: var(--color-text-tertiary); line-height: 1.4;
+      overflow: hidden; white-space: nowrap; text-overflow: ellipsis; max-width: 100%;
+    }
+    .day-cell.weekend-day .solar-day { color: var(--color-text-weekend); }
+    .term-text { color: var(--color-solar-term); }
+    .festival-text { color: var(--color-festival); }
+    .day-cell.today .solar-day {
+      color: #fff; background: var(--color-primary);
+      width: 26px; height: 26px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; font-size: 14px;
+    }
+    .day-cell.today .lunar-text { color: var(--color-primary); font-weight: 500; }
+    .day-cell.selected { background: var(--color-primary-light); }
+    .day-cell.selected .solar-day { color: var(--color-primary); }
+
+    /* Next Holiday */
+    .next-holiday {
+      margin: 10px; padding: 12px 14px;
+      background: var(--color-bg-card); border-radius: 12px;
+      display: flex; align-items: center; justify-content: space-between;
+      border-left: 3px solid var(--color-primary);
+      cursor: pointer;
+    }
+    .holiday-info { display: flex; flex-direction: column; gap: 2px; }
+    .holiday-name { font-size: 14px; font-weight: 500; color: var(--color-text-primary); }
+    .holiday-count { font-size: 12px; color: var(--color-text-tertiary); }
+    .holiday-arrow { font-size: 14px; color: var(--color-text-tertiary); }
+
+    /* Shortcuts */
+    .shortcuts { display: flex; justify-content: center; padding: 10px; }
+    .shortcut-item { display: flex; align-items: center; gap: 3px; padding: 6px 12px; cursor: pointer; }
+    .shortcut-icon { font-size: 14px; color: var(--color-text-tertiary); }
+    .shortcut-text { font-size: 12px; color: var(--color-text-tertiary); }
+
+    /* Tab Bar */
+    .tab-bar {
+      display: flex;
+      background: #fff;
+      border-top: 0.5px solid #ddd;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+      height: 56px;
+    }
+    .tab-item {
+      flex: 1; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 2px;
+      cursor: pointer;
+    }
+    .tab-item.active .tab-text { color: var(--color-primary); }
+    .tab-icon {
+      width: 24px; height: 24px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+    }
+    .tab-text { font-size: 10px; color: var(--color-text-tertiary); }
+
+    /* Page 2: Solar Terms */
+    .year-nav {
+      display: flex; align-items: center; justify-content: center;
+      padding: 12px; background: var(--color-bg-card); margin-bottom: 10px;
+    }
+    .year-nav .nav-btn {
+      width: 32px; height: 32px;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 50%; background: var(--color-bg-page);
+      font-size: 14px; color: var(--color-text-primary); cursor: pointer;
+    }
+    .year-nav .year-text {
+      font-size: 16px; font-weight: 500; color: var(--color-text-primary); margin: 0 20px;
+    }
+    .term-list { padding: 0 10px; }
+    .month-divider { padding: 10px 5px 4px; font-size: 12px; color: var(--color-text-tertiary); font-weight: 500; }
+    .term-item {
+      display: flex; align-items: center;
+      background: var(--color-bg-card); padding: 14px 15px; margin-bottom: 1px;
+    }
+    .term-item:first-of-type { border-radius: 12px 12px 0 0; }
+    .term-item:last-of-type { border-radius: 0 0 12px 12px; margin-bottom: 0; }
+    .term-name { flex: 1; font-size: 15px; color: var(--color-text-primary); font-weight: 500; }
+    .term-date { font-size: 14px; color: var(--color-text-secondary); margin-right: 8px; }
+    .term-item.current { background: var(--color-primary-light); }
+    .term-item.current .term-name { color: var(--color-primary); }
+    .term-item.past .term-name { color: var(--color-text-tertiary); }
+    .term-badge { padding: 2px 8px; border-radius: 10px; background: var(--color-primary); }
+    .badge-text { font-size: 10px; color: #fff; }
+
+    /* Page 3: Holiday */
+    .next-card {
+      background: var(--color-primary); padding: 25px 20px; color: #fff; text-align: center;
+    }
+    .next-label { font-size: 12px; opacity: 0.8; display: block; margin-bottom: 4px; }
+    .next-count { font-size: 48px; font-weight: 500; line-height: 1.1; }
+    .next-unit { font-size: 14px; opacity: 0.8; margin-left: 2px; }
+    .next-name { font-size: 16px; display: block; margin-top: 4px; font-weight: 500; }
+    .holiday-list { padding: 0 10px 20px; }
+    .holiday-card {
+      background: var(--color-bg-card); border-radius: 12px;
+      padding: 14px 15px; margin-bottom: 10px;
+    }
+    .card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+    .card-name { font-size: 16px; font-weight: 500; color: var(--color-text-primary); }
+    .card-days {
+      font-size: 12px; color: var(--color-primary);
+      background: var(--color-primary-light); padding: 2px 8px; border-radius: 10px;
+    }
+    .card-dates { margin-bottom: 6px; }
+    .date-tag { display: flex; align-items: center; font-size: 13px; color: var(--color-text-secondary); }
+    .tag-dot { width: 6px; height: 6px; border-radius: 50%; margin-right: 5px; }
+    .tag-dot.green { background: var(--color-solar-term); }
+    .card-workdays { padding-top: 6px; border-top: 0.5px solid var(--color-border); }
+    .workday-label { font-size: 12px; color: var(--color-text-tertiary); }
+    .workday-date { font-size: 12px; color: var(--color-text-secondary); margin-left: 4px; }
+    .card-countdown { margin-top: 6px; text-align: right; }
+    .countdown-text { font-size: 11px; color: var(--color-primary); }
+
+    /* Page toggle */
+    .page-tabs {
+      display: flex; gap: 8px; padding: 12px 20px; justify-content: center;
+    }
+    .page-tab {
+      padding: 6px 16px; border-radius: 16px; font-size: 13px;
+      background: rgba(255,255,255,0.6); color: var(--color-text-secondary);
+      cursor: pointer; border: none; font-weight: 500;
+    }
+    .page-tab.active { background: var(--color-primary); color: #fff; }
+    .page-view { display: none; }
+    .page-view.active { display: block; }
+
+    .preview-label {
+      text-align: center; color: #888; font-size: 12px;
+      margin-top: 12px; letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+<div>
+  <div class="preview-label">万年历小程序 UI 预览（点击切换页面）</div>
+
+  <div class="phone-frame">
+    <div class="status-bar">22:21</div>
+    <div class="nav-bar">万年历</div>
+
+    <div class="content" id="app-content">
+      <!-- Page tabs for switching -->
+      <div class="page-tabs" id="pageTabs">
+        <button class="page-tab active" onclick="switchPage('calendar')">日历</button>
+        <button class="page-tab" onclick="switchPage('terms')">节气</button>
+        <button class="page-tab" onclick="switchPage('holidays')">节假日</button>
+      </div>
+
+      <!-- Page 1: Calendar -->
+      <div class="page-view active" id="page-calendar">
+        <div class="month-nav">
+          <div class="nav-arrow" onclick="prevMonth()">&lt;</div>
+          <div class="nav-title" onclick="openPicker()">
+            <span class="nav-year" id="navYear">2026年5月</span>
+            <span class="nav-lunar" id="navLunar">丙午年（马年）</span>
+          </div>
+          <div class="nav-arrow" onclick="nextMonth()">&gt;</div>
+        </div>
+
+        <div class="date-info-card" onclick="goDetail()">
+          <div class="info-main">
+            <span class="info-date" id="infoDate">5月5日</span>
+            <span class="info-week" id="infoWeek">星期二</span>
+          </div>
+          <div class="info-sub">
+            <span class="info-lunar" id="infoLunar">三月十八</span>
+            <span class="info-festival" id="infoFestival"></span>
+          </div>
+        </div>
+
+        <div class="calendar-grid">
+          <div class="week-header">
+            <div class="week-item"><span class="week-text weekend">日</span></div>
+            <div class="week-item"><span class="week-text">一</span></div>
+            <div class="week-item"><span class="week-text">二</span></div>
+            <div class="week-item"><span class="week-text">三</span></div>
+            <div class="week-item"><span class="week-text">四</span></div>
+            <div class="week-item"><span class="week-text">五</span></div>
+            <div class="week-item"><span class="week-text weekend">六</span></div>
+          </div>
+          <div class="day-grid" id="dayGrid"></div>
+        </div>
+
+        <div class="next-holiday" onclick="switchPage('holidays')">
+          <div class="holiday-info">
+            <span class="holiday-name">端午节</span>
+            <span class="holiday-count">还有 45 天</span>
+          </div>
+          <span class="holiday-arrow">&gt;</span>
+        </div>
+
+        <div class="shortcuts">
+          <div class="shortcut-item">
+            <span class="shortcut-icon">ⓘ</span>
+            <span class="shortcut-text">关于</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Page 2: Solar Terms -->
+      <div class="page-view" id="page-terms">
+        <div class="year-nav">
+          <div class="nav-btn">&lt;</div>
+          <span class="year-text">2026年 节气表</span>
+          <div class="nav-btn">&gt;</div>
+        </div>
+        <div class="term-list" id="termList"></div>
+      </div>
+
+      <!-- Page 3: Holidays -->
+      <div class="page-view" id="page-holidays">
+        <div class="next-card">
+          <span class="next-label">距下一个假期</span>
+          <span class="next-count">45</span>
+          <span class="next-unit">天</span>
+          <span class="next-name">端午节</span>
+        </div>
+        <div class="holiday-list" id="holidayList"></div>
+      </div>
+    </div>
+
+    <div class="tab-bar">
+      <div class="tab-item active" onclick="switchPage('calendar')">
+        <div class="tab-icon">📅</div>
+        <span class="tab-text">日历</span>
+      </div>
+      <div class="tab-item" onclick="switchPage('terms')">
+        <div class="tab-icon">🌿</div>
+        <span class="tab-text">节气</span>
+      </div>
+      <div class="tab-item" onclick="switchPage('holidays')">
+        <div class="tab-icon">🎉</div>
+        <span class="tab-text">节假日</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Simplified lunar data for demo
+const LUNAR_DAY_CN = ['初一','初二','初三','初四','初五','初六','初七','初八','初九','初十','十一','十二','十三','十四','十五','十六','十七','十八','十九','二十','廿一','廿二','廿三','廿四','廿五','廿六','廿七','廿八','廿九','三十'];
+const TIAN_GAN = ['甲','乙','丙','丁','戊','己','庚','辛','壬','癸'];
+const DI_ZHI = ['子','丑','寅','卯','辰','巳','午','未','申','酉','戌','亥'];
+const SHENG_XIAO = ['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'];
+const SOLAR_TERMS = ['小寒','大寒','立春','雨水','惊蛰','春分','清明','谷雨','立夏','小满','芒种','夏至','小暑','大暑','立秋','处暑','白露','秋分','寒露','霜降','立冬','小雪','大雪','冬至'];
+const TERM_DATES_2026 = [[1,5],[1,20],[2,4],[2,19],[3,5],[3,20],[4,5],[4,20],[5,5],[5,21],[6,5],[6,21],[7,7],[7,22],[8,7],[8,23],[9,7],[9,23],[10,8],[10,23],[11,7],[11,22],[12,7],[12,21]];
+
+// Solar holidays
+const SOLAR_HOLIDAYS = {'01-01':'元旦','02-14':'情人节','03-08':'妇女节','05-01':'劳动节','06-01':'儿童节','10-01':'国庆节','12-25':'圣诞节'};
+const LUNAR_HOLIDAYS_2026 = {'01-01':'春节','01-15':'元宵节','05-05':'端午节','07-07':'七夕','08-15':'中秋节','09-09':'重阳节','12-30':'除夕'};
+
+// Simplified lunar calendar offset table for 2026
+// Month start offsets (days from Jan 1 to lunar 1st of each month)
+const LUNAR_OFFSETS_2026 = [17, 46, 75, 104, 134, 163, 193, 222, 251, 280, 310, 339];
+
+const HOLIDAYS_2026 = [
+  {name:'元旦', holidays:['01-01','01-02','01-03'], workdays:[], totalDays:3},
+  {name:'春节', holidays:['02-16','02-17','02-18','02-19','02-20','02-21','02-22'], workdays:['02-14','02-15'], totalDays:7},
+  {name:'清明节', holidays:['04-04','04-05','04-06'], workdays:[], totalDays:3},
+  {name:'劳动节', holidays:['05-01','05-02','05-03','05-04','05-05'], workdays:['04-26'], totalDays:5},
+  {name:'端午节', holidays:['06-19','06-20','06-21'], workdays:[], totalDays:3},
+  {name:'中秋节', holidays:['09-25','09-26','09-27'], workdays:[], totalDays:3},
+  {name:'国庆节', holidays:['10-01','10-02','10-03','10-04','10-05','10-06','10-07','10-08'], workdays:['09-27'], totalDays:8}
+];
+
+let currentYear = 2026, currentMonth = 5, selectedDay = 5;
+
+function getLunarDay(year, month, day) {
+  if (year !== 2026) return '初一';
+  const doy = Math.floor((new Date(year, month-1, day) - new Date(year, 0, 1)) / 86400000);
+  for (let i = LUNAR_OFFSETS_2026.length - 1; i >= 0; i--) {
+    if (doy >= LUNAR_OFFSETS_2026[i]) {
+      const lunarDay = doy - LUNAR_OFFSETS_2026[i] + 1;
+      return LUNAR_DAY_CN[Math.min(lunarDay - 1, 29)];
+    }
+  }
+  return '初一';
+}
+
+function getTerm(year, month, day) {
+  if (year !== 2026) return null;
+  for (let i = 0; i < 24; i++) {
+    if (TERM_DATES_2026[i][0] === month && TERM_DATES_2026[i][1] === day) return SOLAR_TERMS[i];
+  }
+  return null;
+}
+
+function renderCalendar() {
+  const grid = document.getElementById('dayGrid');
+  grid.innerHTML = '';
+  const firstDay = new Date(currentYear, currentMonth - 1, 1).getDay();
+  const daysInMonth = new Date(currentYear, currentMonth, 0).getDate();
+  const daysInPrev = new Date(currentYear, currentMonth - 1, 0).getDate();
+  const now = new Date();
+  const isTodayMonth = now.getFullYear() === currentYear && now.getMonth() + 1 === currentMonth;
+
+  // Prev month fill
+  for (let i = firstDay - 1; i >= 0; i--) {
+    grid.innerHTML += `<div class="day-cell other-month"><span class="solar-day">${daysInPrev - i}</span><span class="lunar-text"></span></div>`;
+  }
+
+  // Current month
+  for (let d = 1; d <= daysInMonth; d++) {
+    const isToday = isTodayMonth && now.getDate() === d;
+    const isSelected = d === selectedDay;
+    const dow = new Date(currentYear, currentMonth - 1, d).getDay();
+    const isWeekend = dow === 0 || dow === 6;
+    const term = getTerm(currentYear, currentMonth, d);
+    const mKey = `${String(currentMonth).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+    const sHoliday = SOLAR_HOLIDAYS[mKey];
+    const lunarDay = getLunarDay(currentYear, currentMonth, d);
+
+    let display = lunarDay;
+    let cls = '';
+    if (term) { display = term; cls = 'term-text'; }
+    else if (sHoliday) { display = sHoliday; cls = 'festival-text'; }
+
+    let cellCls = 'day-cell';
+    if (isToday) cellCls += ' today';
+    if (isSelected && !isToday) cellCls += ' selected';
+    if (isWeekend) cellCls += ' weekend-day';
+
+    grid.innerHTML += `<div class="${cellCls}" onclick="selectDay(${d})"><span class="solar-day">${d}</span><span class="lunar-text ${cls}">${display}</span></div>`;
+  }
+
+  // Next month fill
+  const total = firstDay + daysInMonth;
+  const remain = total <= 35 ? 35 - total : 42 - total;
+  for (let i = 1; i <= remain; i++) {
+    grid.innerHTML += `<div class="day-cell other-month"><span class="solar-day">${i}</span><span class="lunar-text"></span></div>`;
+  }
+
+  // Update nav
+  document.getElementById('navYear').textContent = `${currentYear}年${currentMonth}月`;
+  const ganIdx = (2026 - 4) % 10;
+  const zhiIdx = (2026 - 4) % 12;
+  document.getElementById('navLunar').textContent = `${TIAN_GAN[ganIdx]}${DI_ZHI[zhiIdx]}年（${SHENG_XIAO[zhiIdx]}年）`;
+
+  // Update info card
+  const weekDays = ['星期日','星期一','星期二','星期三','星期四','星期五','星期六'];
+  const dow = new Date(currentYear, currentMonth - 1, selectedDay).getDay();
+  document.getElementById('infoDate').textContent = `${currentMonth}月${selectedDay}日`;
+  document.getElementById('infoWeek').textContent = weekDays[dow];
+  document.getElementById('infoLunar').textContent = `三月${LUNAR_DAY_CN[selectedDay + 17] || '十八'}`;
+  const term = getTerm(currentYear, currentMonth, selectedDay);
+  const mKey = `${String(currentMonth).padStart(2,'0')}-${String(selectedDay).padStart(2,'0')}`;
+  document.getElementById('infoFestival').textContent = term || SOLAR_HOLIDAYS[mKey] || '';
+}
+
+function selectDay(d) { selectedDay = d; renderCalendar(); }
+function prevMonth() {
+  currentMonth--; if (currentMonth < 1) { currentMonth = 12; currentYear--; } selectedDay = 1; renderCalendar();
+}
+function nextMonth() {
+  currentMonth++; if (currentMonth > 12) { currentMonth = 1; currentYear++; } selectedDay = 1; renderCalendar();
+}
+function openPicker() {}
+function goDetail() {}
+
+function renderTerms() {
+  const list = document.getElementById('termList');
+  list.innerHTML = '';
+  const now = new Date();
+  const cm = now.getMonth() + 1, cd = now.getDate();
+  let currentIdx = 0;
+  for (let i = 0; i < 24; i++) {
+    const t = TERM_DATES_2026[i];
+    if (t[0] > cm || (t[0] === cm && t[1] >= cd)) { currentIdx = i; break; }
+  }
+  for (let i = 0; i < 24; i++) {
+    const t = TERM_DATES_2026[i];
+    if (i % 2 === 0) list.innerHTML += `<div class="month-divider">${t[0]}月</div>`;
+    let cls = 'term-item';
+    if (i === currentIdx) cls += ' current';
+    else if (i < currentIdx) cls += ' past';
+    const badge = i === currentIdx ? `<div class="term-badge"><span class="badge-text">当前</span></div>` : '';
+    list.innerHTML += `<div class="${cls}"><span class="term-name">${SOLAR_TERMS[i]}</span><span class="term-date">${t[0]}月${t[1]}日</span>${badge}</div>`;
+  }
+}
+
+function renderHolidays() {
+  const list = document.getElementById('holidayList');
+  list.innerHTML = '';
+  const now = new Date();
+  HOLIDAYS_2026.forEach(h => {
+    const first = new Date(2026, parseInt(h.holidays[0].split('-')[0]) - 1, parseInt(h.holidays[0].split('-')[1]));
+    const days = Math.ceil((first - now) / 86400000);
+    const countdown = days > 0 ? `<div class="card-countdown"><span class="countdown-text">${days} 天后</span></div>` : '';
+    const workdays = h.workdays.length > 0 ? `<div class="card-workdays"><span class="workday-label">调休上班：</span>${h.workdays.map(w => `<span class="workday-date">${w}</span>`).join('')}</div>` : '';
+    list.innerHTML += `<div class="holiday-card">
+      <div class="card-header"><span class="card-name">${h.name}</span><span class="card-days">共 ${h.totalDays} 天</span></div>
+      <div class="card-dates"><div class="date-tag"><span class="tag-dot green"></span><span>${h.holidays[0]} 至 ${h.holidays[h.holidays.length-1]}</span></div></div>
+      ${workdays}${countdown}</div>`;
+  });
+}
+
+function switchPage(name) {
+  document.querySelectorAll('.page-view').forEach(p => p.classList.remove('active'));
+  document.getElementById('page-' + name).classList.add('active');
+  document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.page-tab').forEach(t => {
+    if (t.textContent === {calendar:'日历',terms:'节气',holidays:'节假日'}[name]) t.classList.add('active');
+  });
+  document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+  const tabItems = document.querySelectorAll('.tab-item');
+  const idx = {calendar:0, terms:1, holidays:2}[name];
+  if (tabItems[idx]) tabItems[idx].classList.add('active');
+
+  if (name === 'terms') renderTerms();
+  if (name === 'holidays') renderHolidays();
+}
+
+renderCalendar();
+</script>
+</body>
+</html>

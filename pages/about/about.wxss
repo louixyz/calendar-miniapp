@@ -1,0 +1,73 @@
+.page {
+  min-height: 100vh;
+  background: var(--color-bg-page);
+}
+
+.about-header {
+  background: var(--color-primary);
+  padding: 80rpx 40rpx;
+  text-align: center;
+  color: #fff;
+}
+
+.app-icon {
+  font-size: 80rpx;
+  display: block;
+  margin-bottom: 16rpx;
+}
+
+.app-name {
+  font-size: 40rpx;
+  font-weight: 500;
+  display: block;
+}
+
+.app-version {
+  font-size: 24rpx;
+  opacity: 0.7;
+  display: block;
+  margin-top: 8rpx;
+}
+
+.about-content {
+  padding: 20rpx;
+}
+
+.about-item {
+  background: var(--color-bg-card);
+  padding: 28rpx 30rpx;
+  margin-bottom: 2rpx;
+}
+
+.about-item:first-child {
+  border-radius: 16rpx 16rpx 0 0;
+}
+
+.about-item:last-child {
+  border-radius: 0 0 16rpx 16rpx;
+  margin-bottom: 0;
+}
+
+.item-label {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.item-desc {
+  font-size: 24rpx;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.about-footer {
+  text-align: center;
+  padding: 40rpx;
+}
+
+.footer-text {
+  font-size: 22rpx;
+  color: var(--color-text-tertiary);
+}

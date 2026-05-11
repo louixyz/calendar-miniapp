@@ -1,0 +1,24 @@
+<view class="calendar-grid">
+  <!-- 星期头部 -->
+  <view class="week-header">
+    <view class="week-item" wx:for="{{weekDays}}" wx:key="index">
+      <text class="week-text {{index === 0 || index === 6 ? 'weekend' : ''}}">{{item}}</text>
+    </view>
+  </view>
+
+  <!-- 日期网格 -->
+  <view class="day-grid">
+    <view
+      class="day-cell {{item.isCurrentMonth ? '' : 'other-month'}} {{item.isToday ? 'today' : ''}} {{item.dateKey === selectedDate ? 'selected' : ''}} {{item.weekend && item.isCurrentMonth ? 'weekend-day' : ''}} {{item.dayStatus && item.dayStatus.isHoliday ? 'holiday' : ''}} {{item.dayStatus && item.dayStatus.isWorkday ? 'workday' : ''}}"
+      wx:for="{{gridData}}"
+      wx:key="dateKey"
+      data-index="{{index}}"
+      bindtap="onDayTap"
+    >
+      <!-- 公历日期 -->
+      <text class="solar-day">{{item.day}}</text>
+      <!-- 农历/节气/节日 -->
+      <text class="lunar-text {{item.displayType === 'term' ? 'term-text' : ''}} {{item.displayType === 'festival' ? 'festival-text' : ''}}">{{item.isCurrentMonth ? item.displayText : ''}}</text>
+    </view>
+  </view>
+</view>
