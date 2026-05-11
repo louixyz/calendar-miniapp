@@ -5,6 +5,18 @@
       {
         "type": "folder",
         "value": "minitest/"
+      },
+      {
+        "type": "file",
+        "value": "**.md"
+      },
+      {
+        "type": "file",
+        "value": ".gitignore"
+      },
+      {
+        "type": "file",
+        "value": "README.md"
       }
     ],
     "include": []

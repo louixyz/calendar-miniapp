@@ -15,6 +15,7 @@
       data-index="{{index}}"
       bindtap="onDayTap"
     >
+      <text class="today-mark" wx:if="{{item.isToday}}">今</text>
       <!-- 公历日期 -->
       <text class="solar-day">{{item.day}}</text>
       <!-- 农历/节气/节日 -->

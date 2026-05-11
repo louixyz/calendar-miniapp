@@ -17,6 +17,8 @@
   <view class="date-info-card" bindtap="onGoDetail">
     <view class="info-main">
       <text class="info-date">{{detail.month}}月{{detail.day}}日</text>
+    </view>
+    <view class="info-week-center">
       <text class="info-week">{{detail.weekDay}}</text>
     </view>
     <view class="info-sub">

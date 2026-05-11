@@ -52,6 +52,7 @@
   background: var(--color-bg-card);
   padding: 28rpx 30rpx;
   margin-bottom: 2rpx;
+  position: relative;
 }
 
 .term-item:first-of-type {
@@ -89,6 +90,9 @@
 }
 
 .term-badge {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 4rpx 16rpx;
   border-radius: 20rpx;
   background: var(--color-primary);
