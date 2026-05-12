@@ -1,134 +1,155 @@
-.page {
-  min-height: 100vh;
-  background: var(--color-bg-page);
+/* 
+  title: 节假日页面样式（统一字体 + 卡片美化）
+  filename: holiday.wxss
+  version: 1.2.0
+  author: louixyz
+  timestamp: 2026-05-12
+  note: 字体统一使用系统默认中文字体栈，层次清晰
+*/
+
+/* ── 全局字体变量 ─────────────────────────────── */
+page {
+  font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #1a1a1a;
 }
 
-/* 下一个假期卡片 */
+.page {
+  padding: 24rpx 24rpx 40rpx;
+}
+
+/* ── 下一个节假日卡片 ─────────────────────────── */
 .next-card {
-  background: var(--color-primary);
-  padding: 50rpx 40rpx;
-  color: #fff;
-  text-align: center;
+  background: linear-gradient(135deg, #E85D3A, #f07d5f);
+  border-radius: 20rpx;
+  padding: 36rpx 40rpx;
+  margin-bottom: 28rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4rpx 20rpx rgba(232, 93, 58, 0.25);
 }
 
 .next-label {
   font-size: 24rpx;
-  opacity: 0.8;
-  display: block;
+  color: rgba(255,255,255,0.85);
+  letter-spacing: 2rpx;
   margin-bottom: 8rpx;
 }
 
+.next-count-row {
+  display: flex;
+  align-items: baseline;
+}
+
 .next-count {
-  font-size: 96rpx;
-  font-weight: 500;
-  line-height: 1.1;
+  font-size: 80rpx;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
 }
 
 .next-unit {
   font-size: 28rpx;
-  opacity: 0.8;
-  margin-left: 4rpx;
+  color: rgba(255,255,255,0.9);
+  margin-left: 6rpx;
 }
 
 .next-name {
-  font-size: 32rpx;
-  display: block;
-  margin-top: 8rpx;
+  font-size: 28rpx;
+  color: rgba(255,255,255,0.95);
+  margin-top: 12rpx;
   font-weight: 500;
+  letter-spacing: 1rpx;
 }
 
-/* 年份导航 */
+/* ── 年份导航 ─────────────────────────────────── */
 .year-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 24rpx;
-  background: var(--color-bg-card);
-  margin-bottom: 20rpx;
+  justify-content: space-between;
+  margin-bottom: 24rpx;
+  padding: 0 8rpx;
+}
+
+.year-text {
+  font-size: 30rpx;
+  font-weight: 600;
+  color: #333;
+  letter-spacing: 1rpx;
 }
 
 .nav-btn {
-  width: 64rpx;
-  height: 64rpx;
+  width: 60rpx;
+  height: 60rpx;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background: var(--color-bg-page);
-  font-size: 30rpx;
-  color: var(--color-text-primary);
+  background: #fff;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.08);
 }
 
-.year-text {
-  font-size: 32rpx;
-  font-weight: 500;
-  color: var(--color-text-primary);
-  margin: 0 40rpx;
+.nav-arrow {
+  font-size: 36rpx;
+  color: #E85D3A;
+  line-height: 1;
 }
 
-/* 假期列表 */
+/* ── 假期列表 ─────────────────────────────────── */
 .holiday-list {
-  padding: 0 20rpx 40rpx;
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
 }
 
+/* ── 单张卡片 ─────────────────────────────────── */
 .holiday-card {
-  background: var(--color-bg-card);
-  border-radius: 16rpx;
-  padding: 28rpx 30rpx;
-  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 18rpx;
+  padding: 32rpx 36rpx 24rpx;
+  box-shadow: 0 2rpx 12rpx rgba(0,0,0,0.06);
+  position: relative;
+  transition: opacity 0.2s;
 }
 
 .holiday-card.past {
-  background: #f2f2f2;
+  opacity: 0.45;
 }
 
-.holiday-card.past .card-name,
-.holiday-card.past .card-days,
-.holiday-card.past .date-tag,
-.holiday-card.past .workday-label,
-.holiday-card.past .workday-date,
-.holiday-card.past .countdown-text {
-  color: #999999;
-}
-
-.holiday-card.past .card-days {
-  background: #e8e8e8;
-}
-
-.holiday-card.past .tag-dot {
-  background: #c6c6c6;
-}
-
+/* 卡片头部 */
 .card-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 16rpx;
+  justify-content: space-between;
+  margin-bottom: 18rpx;
 }
 
 .card-name {
   font-size: 32rpx;
-  font-weight: 500;
-  color: var(--color-text-primary);
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 1rpx;
 }
 
 .card-days {
-  font-size: 24rpx;
-  color: var(--color-primary);
-  background: var(--color-primary-light);
+  font-size: 22rpx;
+  color: #E85D3A;
+  background: rgba(232, 93, 58, 0.08);
   padding: 4rpx 16rpx;
   border-radius: 20rpx;
+  font-weight: 500;
 }
 
+/* 日期标签 */
 .card-dates {
-  margin-bottom: 12rpx;
+  margin-bottom: 14rpx;
 }
 
 .date-tag {
   display: flex;
   align-items: center;
-  font-size: 26rpx;
-  color: var(--color-text-secondary);
+  flex-wrap: wrap;
 }
 
 .tag-dot {
@@ -136,34 +157,74 @@
   height: 12rpx;
   border-radius: 50%;
   margin-right: 10rpx;
+  flex-shrink: 0;
 }
 
 .tag-dot.green {
-  background: var(--color-solar-term);
+  background: #4CAF50;
 }
 
+.date-text {
+  font-size: 26rpx;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* 调休 */
 .card-workdays {
-  padding-top: 12rpx;
-  border-top: 1rpx solid var(--color-border);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 6rpx;
+  margin-bottom: 14rpx;
 }
 
 .workday-label {
-  font-size: 24rpx;
-  color: var(--color-text-tertiary);
+  font-size: 22rpx;
+  color: #999;
+  margin-right: 4rpx;
 }
 
 .workday-date {
-  font-size: 24rpx;
-  color: var(--color-text-secondary);
-  margin-left: 8rpx;
+  font-size: 22rpx;
+  color: #bbb;
+}
+
+/* 卡片底部：倒计时 + 跳转提示 */
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18rpx;
+  padding-top: 18rpx;
+  border-top: 1rpx solid #f0f0f0;
 }
 
 .card-countdown {
-  margin-top: 12rpx;
-  text-align: right;
+  display: flex;
+  align-items: center;
 }
 
 .countdown-text {
+  font-size: 24rpx;
+  color: #E85D3A;
+  font-weight: 600;
+  background: rgba(232, 93, 58, 0.08);
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+}
+
+.countdown-today {
+  font-size: 24rpx;
+  color: #4CAF50;
+  font-weight: 600;
+  background: rgba(76, 175, 80, 0.08);
+  padding: 4rpx 16rpx;
+  border-radius: 20rpx;
+}
+
+.jump-hint {
   font-size: 22rpx;
-  color: var(--color-primary);
+  color: #bbb;
+  letter-spacing: 0.5rpx;
 }

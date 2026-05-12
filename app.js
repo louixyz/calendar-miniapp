@@ -53,6 +53,7 @@ App({
     screenHeight: constants.DEFAULT_SCREEN_HEIGHT,
     pixelRatio: constants.DEFAULT_PIXEL_RATIO,
     windowWidth: constants.DEFAULT_SCREEN_WIDTH,
-    windowHeight: constants.DEFAULT_SCREEN_HEIGHT
+    windowHeight: constants.DEFAULT_SCREEN_HEIGHT,
+    jumpTarget: null
   }
 });

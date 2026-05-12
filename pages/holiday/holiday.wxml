@@ -1,47 +1,75 @@
+<!--
+  title: 节假日页面模板
+  filename: holiday.wxml
+  version: 1.2.0
+  author: louixyz
+  timestamp: 2026-05-12
+  note: 添加卡片点击跳转 + 统一字体风格
+-->
 <view class="page">
+
   <!-- 下一个节假日卡片 -->
   <view class="next-card" wx:if="{{nextHoliday && nextHoliday.daysUntil > 0}}">
     <text class="next-label">距下一个假期</text>
-    <text class="next-count">{{nextHoliday.daysUntil}}</text>
-    <text class="next-unit">天</text>
+    <view class="next-count-row">
+      <text class="next-count">{{nextHoliday.daysUntil}}</text>
+      <text class="next-unit">天</text>
+    </view>
     <text class="next-name">{{nextHoliday.name}}</text>
   </view>
 
   <!-- 年份导航 -->
   <view class="year-nav">
     <view class="nav-btn" bindtap="onPrevYear">
-      <text>‹</text>
+      <text class="nav-arrow">‹</text>
     </view>
     <text class="year-text">{{year}}年放假安排</text>
     <view class="nav-btn" bindtap="onNextYear">
-      <text>›</text>
+      <text class="nav-arrow">›</text>
     </view>
   </view>
 
   <!-- 假期列表 -->
   <view class="holiday-list">
-    <view class="holiday-card {{item.isPast ? 'past' : ''}}" wx:for="{{holidays}}" wx:key="name">
+    <view
+      class="holiday-card {{item.isPast ? 'past' : ''}}"
+      wx:for="{{holidays}}"
+      wx:key="name"
+      bindtap="onHolidayCardTap"
+      data-index="{{index}}"
+    >
+      <!-- 卡片头部：节日名 + 天数 -->
       <view class="card-header">
         <text class="card-name">{{item.name}}</text>
         <text class="card-days">共 {{item.totalDays}} 天</text>
       </view>
 
+      <!-- 假期日期 -->
       <view class="card-dates">
         <view class="date-tag holiday-tag">
           <text class="tag-dot green"></text>
-          <text>{{item.holidays[0]}}</text>
-          <text wx:if="{{item.holidays.length > 1}}"> 至 {{item.holidays[item.holidays.length - 1]}}</text>
+          <text class="date-text">{{item.holidays[0]}}</text>
+          <text class="date-text" wx:if="{{item.holidays.length > 1}}"> 至 {{item.holidays[item.holidays.length - 1]}}</text>
         </view>
       </view>
 
+      <!-- 调休 -->
       <view class="card-workdays" wx:if="{{item.workdays && item.workdays.length > 0}}">
         <text class="workday-label">调休上班：</text>
-        <text class="workday-date" wx:for="{{item.workdays}}" wx:for-item="wd" wx:key="*this">{{wd}}</text>
+        <text class="workday-date" wx:for="{{item.workdays}}" wx:for-item="wd" wx:key="*this">{{wd}} </text>
       </view>
 
-      <view class="card-countdown" wx:if="{{item.daysUntil > 0}}">
-        <text class="countdown-text">{{item.daysUntil}} 天后</text>
+      <!-- 倒计时 + 跳转提示 -->
+      <view class="card-footer">
+        <view class="card-countdown" wx:if="{{item.daysUntil > 0}}">
+          <text class="countdown-text">{{item.daysUntil}} 天后</text>
+        </view>
+        <view class="card-countdown" wx:elif="{{!item.isPast}}">
+          <text class="countdown-today">今天开始</text>
+        </view>
+        <text class="jump-hint" wx:if="{{!item.isPast}}">查看日历 ›</text>
       </view>
     </view>
   </view>
+
 </view>
