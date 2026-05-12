@@ -8,5 +8,11 @@ Page({
       title: '万年历 - 查看农历、节气、节假日',
       path: '/pages/index/index'
     };
+  },
+
+  onShareTimeline() {
+    return {
+      title: '万年历 - 查看农历、节气、节假日'
+    };
   }
 });

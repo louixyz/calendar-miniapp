@@ -51,6 +51,10 @@
       <text class="shortcut-icon">ⓘ</text>
       <text class="shortcut-text">关于</text>
     </view>
+    <button class="shortcut-item share-btn" open-type="share">
+      <text class="shortcut-icon">分享</text>
+      <text class="shortcut-text">发给朋友</text>
+    </button>
   </view>
 
   <!-- 月份选择器 -->

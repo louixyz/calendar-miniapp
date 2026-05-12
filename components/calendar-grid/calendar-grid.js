@@ -2,6 +2,7 @@ const lunar = require('../../utils/lunar');
 const solarTerm = require('../../utils/solar-term');
 const holiday = require('../../utils/holiday');
 const dateUtil = require('../../utils/date-util');
+const constants = require('../../utils/constants');
 
 Component({
   properties: {
@@ -47,7 +48,7 @@ Component({
             dateKey,
             weekend,
             displayText: '',
-            displayType: 'lunar',
+            displayType: constants.DISPLAY_TYPE.LUNAR,
             dayStatus: null
           };
         }
@@ -64,17 +65,17 @@ Component({
 
         // 显示优先级：农历节日 > 节气 > 公历节日 > 农历日期
         let displayText = lunarInfo ? lunarInfo.dayCN : '';
-        let displayType = 'lunar';
+        let displayType = constants.DISPLAY_TYPE.LUNAR;
 
         if (lunarHoliday) {
           displayText = lunarHoliday;
-          displayType = 'festival';
+          displayType = constants.DISPLAY_TYPE.FESTIVAL;
         } else if (termName) {
           displayText = termName;
-          displayType = 'term';
+          displayType = constants.DISPLAY_TYPE.TERM;
         } else if (solarHoliday) {
           displayText = solarHoliday;
-          displayType = 'festival';
+          displayType = constants.DISPLAY_TYPE.FESTIVAL;
         }
 
         return {

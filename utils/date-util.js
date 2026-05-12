@@ -1,9 +1,11 @@
+const constants = require('./constants');
+
 /**
  * 日历核心工具模块
  * 提供日历网格生成、日期辅助函数等
  */
 
-const WEEK_DAYS = ['日', '一', '二', '三', '四', '五', '六'];
+const WEEK_DAYS = constants.WEEK_DAYS;
 
 /**
  * 获取某月的天数
@@ -12,7 +14,8 @@ const WEEK_DAYS = ['日', '一', '二', '三', '四', '五', '六'];
  * @returns {number}
  */
 function getDaysInMonth(year, month) {
-  return new Date(year, month, 0).getDate();
+  // 使用 UTC 避免时区干扰
+  return new Date(Date.UTC(year, month, 0)).getUTCDate();
 }
 
 /**
@@ -22,7 +25,8 @@ function getDaysInMonth(year, month) {
  * @returns {number}
  */
 function getFirstDayOfMonth(year, month) {
-  return new Date(year, month - 1, 1).getDay();
+  // 使用 UTC 避免时区干扰
+  return new Date(Date.UTC(year, month - 1, 1)).getUTCDay();
 }
 
 /**
@@ -36,15 +40,17 @@ function generateCalendarGrid(year, month) {
   const grid = [];
   const daysInMonth = getDaysInMonth(year, month);
   const firstDay = getFirstDayOfMonth(year, month);
-  const daysInPrevMonth = getDaysInMonth(year, month - 1 || 12);
+  
+  // 上月天数
+  const prevMonthYear = month === 1 ? year - 1 : year;
   const prevMonth = month === 1 ? 12 : month - 1;
-  const prevYear = month === 1 ? year - 1 : year;
+  const daysInPrevMonth = getDaysInMonth(prevMonthYear, prevMonth);
 
   // 上月填充
   for (let i = firstDay - 1; i >= 0; i--) {
     const day = daysInPrevMonth - i;
     grid.push({
-      year: prevYear,
+      year: prevMonthYear,
       month: prevMonth,
       day,
       isCurrentMonth: false,
@@ -53,7 +59,7 @@ function generateCalendarGrid(year, month) {
   }
 
   // 当月
-  const now = new Date();
+  const now = new Date(); // 今天依然使用本地时间，因为用户感知的“今天”是本地的
   const todayYear = now.getFullYear();
   const todayMonth = now.getMonth() + 1;
   const todayDay = now.getDate();
@@ -69,12 +75,12 @@ function generateCalendarGrid(year, month) {
   }
 
   // 下月填充
+  const nextMonthYear = month === 12 ? year + 1 : year;
   const nextMonth = month === 12 ? 1 : month + 1;
-  const nextYear = month === 12 ? year + 1 : year;
   const remain = 42 - grid.length;
   for (let i = 1; i <= remain; i++) {
     grid.push({
-      year: nextYear,
+      year: nextMonthYear,
       month: nextMonth,
       day: i,
       isCurrentMonth: false,
@@ -104,7 +110,8 @@ function formatDate(year, month, day) {
  * @returns {boolean}
  */
 function isWeekend(year, month, day) {
-  const weekDay = new Date(year, month - 1, day).getDay();
+  // 使用 UTC 避免时区干扰
+  const weekDay = new Date(Date.UTC(year, month - 1, day)).getUTCDay();
   return weekDay === 0 || weekDay === 6;
 }
 
@@ -114,8 +121,7 @@ function isWeekend(year, month, day) {
  * @returns {string}
  */
 function getWeekDayCN(dayOfWeek) {
-  const names = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
-  return names[dayOfWeek];
+  return constants.WEEK_DAYS_FULL[dayOfWeek];
 }
 
 /**

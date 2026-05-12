@@ -182,3 +182,19 @@
   font-size: 24rpx;
   color: var(--color-text-tertiary);
 }
+
+.share-btn {
+  background: transparent !important;
+  line-height: normal !important;
+  border-radius: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+}
+
+.share-btn::after {
+  border: none !important;
+}
+
+.share-btn:active {
+  opacity: 0.6;
+}

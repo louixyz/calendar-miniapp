@@ -1,28 +1,58 @@
+const constants = require('./utils/constants');
+
 App({
   onLaunch() {
     try {
-      // 使用微信推荐的新 API 分别获取信息
-      const windowInfo = wx.getWindowInfo();
-      const deviceInfo = wx.getDeviceInfo();
-      const systemSetting = wx.getSystemSetting();
+      // 兼容性处理：优先使用新 API，回退到 getSystemInfoSync
+      let info = {};
+      if (wx.getWindowInfo) {
+        info = { ...info, ...wx.getWindowInfo() };
+      }
+      if (wx.getDeviceInfo) {
+        info = { ...info, ...wx.getDeviceInfo() };
+      }
+      if (wx.getSystemSetting) {
+        info = { ...info, ...wx.getSystemSetting() };
+      }
+
+      // 如果新 API 不存在，使用旧 API 获取
+      if (!wx.getWindowInfo || !wx.getDeviceInfo) {
+        const systemInfo = wx.getSystemInfoSync();
+        info = { ...systemInfo, ...info };
+      }
       
-      this.globalData.statusBarHeight = windowInfo.statusBarHeight || 0;
-      this.globalData.screenWidth = windowInfo.screenWidth || 375;
-      this.globalData.screenHeight = windowInfo.screenHeight || 667;
-      this.globalData.pixelRatio = deviceInfo.pixelRatio || 2;
-      this.globalData.windowWidth = windowInfo.windowWidth || 375;
-      this.globalData.windowHeight = windowInfo.windowHeight || 667;
+      this.globalData.statusBarHeight = info.statusBarHeight || 0;
+      this.globalData.screenWidth = info.screenWidth || constants.DEFAULT_SCREEN_WIDTH;
+      this.globalData.screenHeight = info.screenHeight || constants.DEFAULT_SCREEN_HEIGHT;
+      this.globalData.pixelRatio = info.pixelRatio || constants.DEFAULT_PIXEL_RATIO;
+      this.globalData.windowWidth = info.windowWidth || constants.DEFAULT_SCREEN_WIDTH;
+      this.globalData.windowHeight = info.windowHeight || constants.DEFAULT_SCREEN_HEIGHT;
+
+      // 全局开启分享支持
+      this.enableShareMenu();
     } catch (e) {
-      console.warn('获取设备信息失败，使用默认值');
+      console.warn('获取设备信息失败，使用默认值', e);
+    }
+  },
+
+  /**
+   * 全局开启分享菜单（包含分享到朋友圈）
+   */
+  enableShareMenu() {
+    if (wx.showShareMenu) {
+      wx.showShareMenu({
+        withShareTicket: true,
+        menus: ['shareAppMessage', 'shareTimeline']
+      });
     }
   },
 
   globalData: {
     statusBarHeight: 0,
-    screenWidth: 375,
-    screenHeight: 667,
-    pixelRatio: 2,
-    windowWidth: 375,
-    windowHeight: 667
+    screenWidth: constants.DEFAULT_SCREEN_WIDTH,
+    screenHeight: constants.DEFAULT_SCREEN_HEIGHT,
+    pixelRatio: constants.DEFAULT_PIXEL_RATIO,
+    windowWidth: constants.DEFAULT_SCREEN_WIDTH,
+    windowHeight: constants.DEFAULT_SCREEN_HEIGHT
   }
 });

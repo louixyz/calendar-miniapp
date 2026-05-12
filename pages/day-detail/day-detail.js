@@ -60,5 +60,17 @@ Page({
       title,
       path: `/pages/index/index?date=${info.year}-${info.month}-${info.day}`
     };
+  },
+
+  onShareTimeline() {
+    const { info } = this.data;
+    if (!info) return { title: '万年历' };
+    const title = info.lunarHoliday || info.solarHoliday || info.termName
+      ? `${info.month}月${info.day}日 ${info.lunarHoliday || info.solarHoliday || info.termName}`
+      : `${info.month}月${info.day}日 ${info.monthCN}${info.dayCN}`;
+    return {
+      title,
+      query: `date=${info.year}-${info.month}-${info.day}`
+    };
   }
 });
